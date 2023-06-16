@@ -3,7 +3,7 @@
 import { jsx, Box, Text, Container, ThemeProvider } from 'theme-ui';
 import Logo from 'assets/images/dms.png';
 import { Link } from 'components/link';
-import { menuItems, footerNav } from '../components/footer.data';
+import { menuItems, footerNav } from '../components/Footer2nd/footer.data';
 import { rgba } from 'polished';
 import RevealHorizontal from 'sections/RevealHori';
 import theme from 'theme';
