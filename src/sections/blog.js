@@ -8,7 +8,7 @@ import Post from 'components/cards/post';
 import Poster1 from 'assets/images/blog/ma.png';
 import Poster2 from 'assets/images/blog/Poster2.png';
 import Poster3 from 'assets/images/blog/s.png';
-import Poster4 from 'assets/images/blog/poster3.png';
+import Poster4 from 'assets/images/blog/Poster3.png';
 import RevealHorizontal from './RevealHori';
 import RevealVertical from './RevealUp';
 

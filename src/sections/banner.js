@@ -1,9 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Heading, Text, Button } from 'theme-ui';
-import illustration from 'assets/images/blog/Bax2.png';
+import illustration from 'assets/images/Bax.png';
 import {motion} from "framer-motion";
-import Link from 'next/link';
 
 const Banner = () => {
   return (
