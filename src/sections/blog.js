@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Container } from 'theme-ui';
+import { jsx, Container, Box } from 'theme-ui';
 import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import Post from 'components/cards/post';
@@ -53,7 +53,9 @@ const Blog = () => {
       <Container>
         <RevealHorizontal>
         <SectionHeading
-          sx={{ mb: [6, null, null, 8] }}
+          sx={{ mb: [6, null, null, 8],
+            ml: [8, 0],
+          }}
           slogan="Latest Blog"
           title="Our Recent Blog "
         />
@@ -79,6 +81,7 @@ const styles = {
   },
   masonry: {
     maxWidth: 1250,
-    mx: [-3, null, null, null, 'auto'],
+    mx: [-15, null, null, null, 'auto'],
+    ml: '-2',
   },
 };

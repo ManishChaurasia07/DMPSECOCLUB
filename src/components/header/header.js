@@ -96,13 +96,15 @@ const styles = {
   header: {
     backgroundColor: 'transparent',
     position: 'fixed',
-    left: 0,
-    right: 0,
+    left: ['-50px', null, 0, null],
+    right: ['-100px', null, 0, null],
     py: [5],
+    m: ['0px 0px 0', null, null, null, '-30px 0px 0'],
     transition: 'all 0.3s ease-in-out 0s',
     '&.is-sticky': {
       backgroundColor: '#F2F2F2',
       boxShadow: '0px 20px 50px rgba(59, 90, 136, 0.10)',
+      m: ['0px 0px 0', null, null, null, '0px -20px 0'],
       py: [3],
     },
   },

@@ -22,8 +22,10 @@ const styles = {
   feature: {
     borderBottom: (t) => [null, null, `2x solid ${t.colors.borderColor}`],
     borderRight: (t) => [null, null, `2px solid ${t.colors.borderColor}`],
+    width: ['400px', null, 640, null],
+    alignItems: 'center',
     padding: [
-      null,
+      '10px 40px',
       null,
       null,
       '45px 30px 55px',
@@ -44,7 +46,7 @@ const styles = {
       alignItems: 'center',
       minWidth: [70],
       mb: 8,
-      m: ['20px 60px -70px', null, null, null, '15x 0 0'],
+      m: ['20px 0px -70px', null, null, null, '15x 0 0'],
       
     },
     h4: {

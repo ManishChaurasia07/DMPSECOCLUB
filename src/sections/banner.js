@@ -33,7 +33,7 @@ const Banner = () => {
               individual mindset and collective efforts in achieving
                a sustainable future.
             </Text>
-            <button sx={styles.button}>Get Started</button>
+            <Button sx={styles.button}>Get Started</Button>
           </Box>
         </Box>
     </motion.div>
@@ -45,11 +45,11 @@ const Banner = () => {
 export default Banner;
 
 const styles = {
-  
   section: {
     background: `transparent url(${illustration}) no-repeat center top / cover `,
     pt: [18, null, null, 10, null, null, 0],
     pb: [12, null, null, 12, 7, 11, 0],
+    m: ['0px -98px 0', null, null, null, '-30px 0px 0'],
   },
   contentWrapper: {
     gap: [null, null, null, null, 8, 15],
@@ -64,7 +64,7 @@ const styles = {
   },
   bannerContent: {
     maxWidth: [null, null, 450, '600px', null, 'none'],
-    m: ['20px auto 0', null, null, null, '25px -20px 0'],
+    m: ['20px 60px 0px', null, null, null, '25px -20px 0'],
     textAlign: ['center', null, null, null, 'left'],
     h1: {
       fontFamily: 'headingAlt',
@@ -80,27 +80,25 @@ const styles = {
       maxWidth: [null, null, 370, 470],
       m: ['20px auto 0', null, null, null, '25px 0 0'],
     },
+    button: {
+      zIndex: 999,
+      backgroundColor: "transparent",
+      fontFamily: "body",
+      fontWeight: "bold",
+      borderRadius: "5px",
+      cursor: "pointer",
+      display: "inline-flex",
+      background: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+      alignItems: "center",
+      color: "white",
+      border: 'none',
+      minHeight: "60px",
+      padding: "0 30px",
+      },
+    
   },
   
-  button: {
-    zIndex: 999,
-    m: ['20px auto 0', null, null, null, '25px 0 0'],
-    backgroundColor: "transparent",
-    fontFamily: "body",
-    fontWeight: "bold",
-    borderRadius: "5px",
-    cursor: "pointer",
-    display: "inline-flex",
-    background: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-    alignItems: "center",
-    justifyContent: "center",
-    color: "white",
-    border: 'none',
-    minHeight: "60px",
-    padding: "0 30px",
-    
-    },
-  
+ 
 }
 
 

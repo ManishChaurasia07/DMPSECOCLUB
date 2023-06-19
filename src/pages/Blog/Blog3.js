@@ -5,12 +5,12 @@ import illustration from 'assets/images/blog/Blog3.png';
 import SEO from 'components/seo';
 import Header from '../Header/header';
 import Footer from '../footer';
-import arrow from "assets/images/arrow.svg";
+import arrow from "assets/images/arrow.png";
 import { motion } from 'framer-motion';
 import RevealHorizontal from 'sections/RevealHori';
 import RevealVertical from 'sections/RevealUp';
 
-const Waste = () => {
+const Blog3 = () => {
   return (
     <Container>
       <Container sx={styles.Header}>
@@ -102,10 +102,13 @@ const Waste = () => {
             <Container sx={styles.Backh1}>
               <RevealVertical>
               <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Resource Conservation</code> 
+            Resource Conservation
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -117,10 +120,13 @@ const Waste = () => {
             </RevealVertical>
             <RevealHorizontal>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Pollution Reduction</code> 
+             Pollution Reduction   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -133,10 +139,13 @@ const Waste = () => {
             </RevealHorizontal>
             <RevealVertical>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Energy Savings</code> 
+             Energy Savings   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -155,10 +164,13 @@ const Waste = () => {
             <Container sx={styles.Backh1}>
               <RevealVertical>
               <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Responsible Disposal</code> 
+             Responsible Disposal   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -170,10 +182,13 @@ const Waste = () => {
             </RevealVertical>
             <RevealHorizontal>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Donations and Buyback Programs</code> 
+             Donations and Buyback Programs   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -186,10 +201,13 @@ const Waste = () => {
             </RevealHorizontal>
             <RevealVertical>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Recycling Initiatives</code> 
+             Recycling Initiatives   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -201,10 +219,13 @@ const Waste = () => {
             </RevealVertical>
             <RevealHorizontal>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Certified Recyclers</code> 
+             Certified Recyclers   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -230,10 +251,13 @@ const Waste = () => {
             <Container>
               <RevealVertical>
               <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Corporate Sustainability</code> 
+             Corporate Sustainability   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -245,10 +269,13 @@ const Waste = () => {
             </RevealVertical>
             <RevealHorizontal>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Legislation and Regulations</code> 
+             Legislation and Regulations   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -261,10 +288,13 @@ const Waste = () => {
             </RevealHorizontal>
             <RevealVertical>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
+                  
+               <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
                 <Container sx={styles.als}>
             <Text as="vab">
-           <code>Extended Producer Responsibility (EPR)</code> 
+             Extended Producer Responsibility (EPR)   
             </Text>
             </Container>
             <Container sx={styles.para}>
@@ -292,7 +322,7 @@ const Waste = () => {
     </Container>
   );
 };
-export default Waste;
+export default Blog3;
 
 const styles = {
   Header: {
@@ -305,9 +335,9 @@ const styles = {
  
   section: {
     background: `transparent url(${illustration}) no-repeat center top / cover `,
-    pt: [318, null, null, 518, null, null, 19],
+    pt: [328, null, null, 518, null, null, 19],
     pb: [13, null, null, 85, 7, 11, 0],
-    m: ['-45px 0px 0', null, null, '-30px -40px auto', '35px -10px 0'],
+    m: ['-30px -20px 0', null, null, '-30px 0px auto', '35px -10px 0'],
   },
   contentWrapper: {
     gap: [null, null, null, null, 8, 15],
@@ -328,7 +358,7 @@ const styles = {
     letterSpacing: [0, null, null, null, '-1.5px'],
     color: '#010001',
   maxWidth: [null, null, 450, '700px', null, 'none'],
-  m: ['20px 0', null, '-20px 356px', null, 0],
+  m: ['20px 0', null, '-20px 356px 20px', null, 0],
   textAlign: ['inherit', null, null, null, 'left'],
   },
   p:{
@@ -341,32 +371,22 @@ const styles = {
   textAlign: ['inherit', null, null, null, 'left'],
   fontFamily: 'sans-serif',
   },
+  align: {
+    margin: ['0px 0px 0px', null, '0px 350px -26px', null],
+  },
   vab: {
-      fontFamily: 'headingAlt',
-      fontSize: [ 18, null, null, '1.5rem', 12, 45, 16],
-      lineHeight: [1.31, null, null, 1.5, null, 1.26],
-      letterSpacing: [1, null, null, null, '-1.5px'],
-      color: '#00000099',
-    m: ['20px 0', null, '0px 400px 0px ', null, '0 auto '],
+    fontFamily: 'headingAlt',
+    fontSize: [ 18, null, null, '1.5rem', 12, 45, 16],
+    lineHeight: [1.31, null, null, 1.5, null, 1.26],
+    letterSpacing: [1, null, null, null, '-1.5px'],
+    color: '#00000099',
+    m: ['-30px 30px 20px', null, '-40px 380px 0px', null, '0 auto '],
     textAlign: ['left', null, null, null, 'left'],
     backgroundColor: '#00000014',
     padding: '0.2em 0.6em 0.2em 0.4em',
+    display: 'flex',
   },
   },
-  als: {
-    m: ['-30px 50px 20px', null, '-40px 0px -13px', null, 0],
-    },
-  para: {
-    maxWidth: [480, null, 550, '700px', null, 'none'],
-    m: ['20px 30px', null, '20px 400px 0px', null, 0],
-  },
-  arrow: {
-    height: '30px',
-    width: '30%',
-    m: ['0px -45px', null, '-23px 150px 0px', null, 0],
-    },
-    Backh1: {
-    m: ['20px 0', null, '50px 0px 0px ', null, '0 auto '],
-    }
+ 
 };
 

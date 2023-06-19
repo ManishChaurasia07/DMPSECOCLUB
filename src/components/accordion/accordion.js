@@ -55,6 +55,7 @@ export default function Accordion({ items, ...props }) {
 const styles = {
   accordion: {
     borderBottom: `1px solid ${rgba('#0F2137', 0.3)}`,
+    width: ['400px', 1230],
     gap: [2, null, null, 4, 3, 13],
     display: 'grid',
     gridTemplateColumns: ['1fr ', null, null, null, '1fr 1fr'],
@@ -74,9 +75,10 @@ const styles = {
     fontSize: [2, null, null, 4],
     lineHeight: 1.5,
     letterSpacing: 'heading',
-    paddingRight: [8, null, null, 0],
+    paddingRight: [1, null, null, 0],
   },
   content: {
+    width: ['380px', 600],
     fontSize: [1, null, null, 2],
     '> div': {
       paddingTop: [1, null, null, 0],

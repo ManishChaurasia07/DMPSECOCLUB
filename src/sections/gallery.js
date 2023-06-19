@@ -32,8 +32,6 @@ const data = [
     id: 3,
     image: gallery3,
   },
-];
-const mob = [
   {
     id: 4,
     image: gallery4,
@@ -48,7 +46,7 @@ const mob = [
     image: gallery5,
     title: 'Plastic Drive',
   },
-]
+];
 
 const masonryOptions = {
   transitionDuration: 0,
@@ -71,11 +69,6 @@ const Gallery = () => {
             <GalleryCard key={item.id} item={item} />
           ))}
         </Box>
-        <Box as={Masonry} options={masonryOptions} sx={styles.phone}>
-          {mob?.map((item) => (
-            <GalleryCard key={item.id} item={item} sx={styles.phone}/>
-          ))}
-          </Box>
         </RevealVertical>
         <RevealHorizontal>
         <Link href="/photo">
@@ -102,8 +95,10 @@ const fadeRight = keyframes`
 `;
 const styles = {
   form: {
+    ml: [7, 0],
+    width: ['100%'],
     button: {
-      m: ['20px auto 0', null, null, null, '5px 540px 0'],
+      m: ['10px 50px 0', null, null, null, '5px 540px 0'],
       borderRadius: '40px',
       svg: {
         transform: 'translateX(3px)',
@@ -122,24 +117,12 @@ const styles = {
   },
   heading: {
     mb: [30, 30, 40, 60],
+    width: [490, 1220],
+    ml: ['-50px', 10],
   },
   galleryWrapper: {
-    mx: '-15px',
-    
-  },
-  button: {
-    minHeight: [50, 50, 50, 60],
-    fontSize: [14, 14, 16],
-    m: ['20px 36px 0', null, null, null, '5px 430px 0'],
-    maxWidth: ['400px', null, null, null, '80px', '100%'],
-    svg: {
-      transition: 'margin-left 0.3s ease-in-out 0s',
-    },
-    ':hover': {
-      svg: {
-        ml: '5px',
-      },
-    },
+    mx: '-105px',
+    ml: ['-40px', '-40px'],
   },
   phone: {
     '@media (max-width: 768px)' : {

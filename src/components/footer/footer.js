@@ -76,7 +76,7 @@ const styles = {
   footerNav: {
     cursor: 'pointer',
     listStyle: 'none',
-    margin: ['15px 0 0', '15px 0 0', '0'],
+    margin: ['15px 0px 0', '15px 0 0', '0'],
     padding: 0,
     display: ['flex'],
     flexWrap: ['wrap', null, null, 'unset'],

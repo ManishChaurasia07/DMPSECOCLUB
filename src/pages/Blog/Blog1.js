@@ -5,7 +5,7 @@ import illustration from 'assets/images/blog/Blog11.png';
 import SEO from 'components/seo';
 import Header from '../Header/header';
 import Footer from '../footer';
-import arrow from "assets/images/arrow.svg";
+import arrow from "assets/images/arrow.png";
 import { motion } from 'framer-motion';
 import RevealHorizontal from 'sections/RevealHori';
 import RevealVertical from 'sections/RevealUp';
@@ -99,13 +99,15 @@ const Waste = () => {
 
             <RevealHorizontal>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
-                <Container sx={styles.als}>
+                 <Container as="align">
+                <img src={arrow}  as="arrow"/>
+                </Container>
+                <Container  >
             <Text as="vab">
            <code>Embrace reusable alternative</code> 
             </Text>
             </Container>
-            <Container sx={styles.para}>
+            <Container >
             <Text as="p">
             Replace single-use plastic items like water bottles, shopping bags, and straws with reusable alternatives made of eco-friendly materials such as glass, metal, or fabric.            </Text>
             </Container>
@@ -114,13 +116,15 @@ const Waste = () => {
 
             <RevealVertical>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
-                <Container sx={styles.als}>
+                 <Container as="align">
+                <img src={arrow}  as="arrow"/>
+                </Container>
+                <Container  >
             <Text as="vab">
            <code>Say no to plastic packaging</code> 
             </Text>
             </Container>
-            <Container sx={styles.para}>
+            <Container >
             <Text as="p">
             Opt for products with minimal or plastic-free packaging. Choose items that come in recyclable or biodegradable packaging whenever possible.
                 </Text>
@@ -130,13 +134,15 @@ const Waste = () => {
 
             <RevealHorizontal>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
-                <Container sx={styles.als}>
+                 <Container as="align">
+                <img src={arrow}  as="arrow"/>
+                </Container>
+                <Container  >
             <Text as="vab">
            <code>Recycle effectively</code> 
             </Text>
             </Container>
-            <Container sx={styles.para}>
+            <Container >
             <Text as="p">
             Familiarize yourself with local recycling programs and guidelines. Separate recyclable materials from general waste and ensure they reach the appropriate recycling facilities.
                 </Text>
@@ -158,13 +164,15 @@ const Waste = () => {
             </RevealHorizontal>
             <RevealVertical>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
-                <Container sx={styles.als}>
+                 <Container as="align">
+                <img src={arrow}  as="arrow"/>
+                </Container>
+                <Container  >
             <Text as="vab">
            <code>Resource conservation</code> 
             </Text>
             </Container>
-            <Container sx={styles.para}>
+            <Container >
             <Text as="p">
             E-waste contains valuable materials like precious metals, copper, and rare earth elements. By recycling e-waste, we can recover these resources, reducing the need for destructive mining practices and conserving natural resources.
                 </Text>
@@ -174,13 +182,15 @@ const Waste = () => {
 
             <RevealHorizontal>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
-                <Container sx={styles.als}>
+                 <Container as="align">
+                <img src={arrow}  as="arrow"/>
+                </Container>
+                <Container  >
             <Text as="vab">
            <code>Preventing environmental hazards</code> 
             </Text>
             </Container>
-            <Container sx={styles.para}>
+            <Container >
             <Text as="p">
             When e-waste ends up in landfills or incinerators, toxic substances can leach into the soil, water, and air, posing a significant threat to human and environmental health. Recycling e-waste ensures the safe handling and disposal of hazardous materials.
                 </Text>
@@ -190,13 +200,15 @@ const Waste = () => {
 
             <RevealVertical>
             <Container>
-                <img src={arrow} sx={styles.arrow}/>
-                <Container sx={styles.als}>
+                 <Container as="align">
+                <img src={arrow} as="arrow"/>
+                </Container>
+                <Container >
             <Text as="vab">
            <code>Promoting a circular economy</code> 
             </Text>
             </Container>
-            <Container sx={styles.para}>
+            <Container >
             <Text as="p">
             Recycling e-waste is an integral part of transitioning to a circular economy, where resources are reused and recycled, minimizing waste generation. By participating in e-waste recycling programs, we contribute to the creation of a sustainable and responsible consumption cycle.
                 </Text>
@@ -226,18 +238,17 @@ export default Waste;
 
 const styles = {
  Header: {
-    m: ['30px -10px 0', null,null, '15px -10px', '35px -20px 0'],
+    m: ['30px 0px 0', null,null, '15px 0px 0px', '35px -20px 0'],
   },
   heading: {
     mb: [60, 30, 40, 60],
     color: ['#fff'],
   },
- 
   section: {
     background: `transparent url(${illustration}) no-repeat center top / cover `,
-    pt: [318, null, null, 518, null, null, 19],
+    pt: [328, null, null, 518, null, null, 19],
     pb: [13, null, null, 85, 7, 11, 0],
-    m: ['-45px 0px 0', null, null, '-30px -40px auto', '35px -10px 0'],
+    m: ['-30px -20px 0', null, null, '-30px 0px auto', '35px -10px 0'],
   },
   contentWrapper: {
     gap: [null, null, null, null, 8, 15],
@@ -250,7 +261,11 @@ const styles = {
       pt: 64,
     },
   },
+  
   bannerContent: {
+    align: {
+      margin: ['0px 0px 0px', null, '0px 350px -26px', null],
+    },
     h1: {
       fontFamily: 'sans-serif',
     fontSize: [ 20, null, null, '2em', 16, 45, 16],
@@ -277,24 +292,13 @@ const styles = {
       lineHeight: [1.31, null, null, 1.5, null, 1.26],
       letterSpacing: [1, null, null, null, '-1.5px'],
       color: '#00000099',
-    m: ['20px 0', null, '0px 400px 0px ', null, '0 auto '],
-    textAlign: ['left', null, null, null, 'left'],
-    backgroundColor: '#00000014',
-    padding: '0.2em 0.6em 0.2em 0.4em',
+      m: ['-30px 30px 20px', null, '-40px 380px 0px', null, '0 auto '],
+      textAlign: ['left', null, null, null, 'left'],
+      backgroundColor: '#00000014',
+      padding: '0.2em 0.6em 0.2em 0.4em',
+      display: 'flex',
   },
   },
-  als: {
-    m: ['-30px 50px 20px', null, '-40px 0px -13px', null, 0],
-    },
-  para: {
-    maxWidth: [480, null, 550, '700px', null, 'none'],
-    m: ['20px 30px', null, '20px 400px 0px', null, 0],
-  },
-  arrow: {
-    height: '30px',
-    width: '30%',
-    m: ['0px -45px', null, '-23px 150px 0px', null, 0],
-    },
-    
+  
 };
 

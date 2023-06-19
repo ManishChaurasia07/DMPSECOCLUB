@@ -73,7 +73,7 @@ const styles = {
     m: ['-490px 10px 0', null, null, '30px auto', '35px -30px 0'],
   },
   button: {
-    m: ['350px 10px 0', null, null, '30px auto', '35px -30px 0'],
+    m: ['350px 30px 0', null, null, '30px auto', '35px -30px 0'],
   },
   bs: {
     borderRadius: '40px',
@@ -88,13 +88,12 @@ const styles = {
     },
   },
   illustration: {
-    textAlign: 'center',
-    position: 'relative',
     display: 'flex',
     alignItems: 'center',
     mt: [2, null, null, 0, 4, 7],
+    ml: 10,
     img: {
-      maxWidth: ['100%', null, null, null, null, '100%'],
+      maxWidth: ['450px', null, null, null, null, '100%'],
     },
   },
   content: {
@@ -110,6 +109,7 @@ const styles = {
     fontFamily: 'headingAlt',
     fontSize: [4, null, null, 8, null, null, 11],
     fontWeight: 500,
+    ml: [10, 0],
     lineHeight: [1.33, null, 1.4, 1.53],
     letterSpacing: ['-0.5px', null, null, '-1px'],
     mb: 3,
@@ -122,7 +122,8 @@ const styles = {
     color: 'textSecondary',
     fontSize: ['13px', null, null, 2, '15px', 2],
     lineHeight: [1.86, null, null, null, 1.86, 2.25],
-    maxWidth: 470,
+    width: [420, 500],
+    ml: [50, 0],
   },
   list: {
     gap: '0 18px',

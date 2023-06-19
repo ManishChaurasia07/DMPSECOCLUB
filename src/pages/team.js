@@ -136,7 +136,7 @@ const masonryOptions = {
   transitionDuration: 0,
 };
 
-const Gallery = () => {
+const Team = () => {
   return (
     <Container>
     <Container sx={styles.Header}>
@@ -145,7 +145,6 @@ const Gallery = () => {
     <ThemeProvider theme={theme}>
     <Container>
     <Container id="gallery" as="section" sx={styles.section} >
-    
     <Container as="section" id="home" sx={styles.sec}>
       <SEO
           title="DMPS - ECOCLUB"
@@ -216,30 +215,12 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Team;
 
 
 const styles = {
   Header: {
     m: ['-20px 0px 0', null,null, '-35px 0px 20px', '35px -10px 0'],
-  },
-  layout: {
-    container: {
-      maxWidth: [
-        "100%",
-        null,
-        null,
-        "720px",
-        "970px",
-        "1140px",
-        "1260px",
-        "1366px",
-      ],
-      paddingLeft: [6],
-      paddingRight: [6],
-      m: "0 auto",
-    },
-    main: {},
   },
   section: {
     pt: [30, 30, 40, 50, 60],
@@ -247,20 +228,23 @@ const styles = {
   },
   heading: {
     mb: [30, 30, 40, 60],
-    m: ['60px 0px 0', null, null, '100px 25px', '35px 0px 0'],
+    m: ['60px -105px 0', null, null, '100px 25px', '35px 0px 0'],
     color: ['#02073E'],
+    width: ['250%', '100%'],
   },
   grid: {
     mt: [0, null, -6, null, 4],
-    m: ['0px 0px 0', null, null, '0px 0px', '5px 90px 0'],
-    gridGap: ['25px 15px', null, 0, null, null, '20px 30px'],
+    m: ['20px -95px 0px', null, null, '0px 0px', '0px 0px 0px'],
+    gridGap: ['25px 55px', null, '20px 0px 0px', null, null, '20px 30px'],
+    width: ['200%', '100%'],
     gridTemplateColumns: [
       'repeat(2, 1fr)',
       null,
       'repeat(2, 1fr)',
       null,
       'repeat(4, 1fr)',
+      'repeat(4, 1fr)', // Added for 512px mobile size
     ],
+
   },
-  
-};
+  };

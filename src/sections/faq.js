@@ -79,7 +79,9 @@ const Faq = () => {
       <Container>
         <RevealHorizontal>
         <SectionHeading
-          sx={{ mb: [6, null, null, 12, 17] }}
+          sx={{ mb: [6, null, null, 12, 17],
+          ml: 8,
+          }}
           slogan="Get your question answer"
           title="Frequently asked question"
         />
@@ -109,6 +111,7 @@ const styles = {
   loadMore: {
     paddingTop: [3, null, null, 0],
     textAlign: 'center',
+    ml: [10, 0],
     button: {
       backgroundColor: '#ECF2F7',
       color: '#738295',

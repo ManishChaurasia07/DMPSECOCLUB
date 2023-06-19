@@ -25,6 +25,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
+    width: ['130%', '100%'],
     py: [5, null, 4, 5, 6],
     px: [1, null, 6, 7],
     transition: 'ease-in-out 0.4s',

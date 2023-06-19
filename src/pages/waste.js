@@ -24,6 +24,7 @@ const data = [
   {
     id: 1,
     image: gallery1,
+   
   },
 ];
 const data2 = [
@@ -200,7 +201,7 @@ const styles = {
  
   section: {
     background: `transparent url(${illustration}) no-repeat center top / cover `,
-    pt: [318, null, null, 518, null, null, 19],
+    pt: [318, null, null, 578, null, null, 19],
     pb: [13, null, null, 12, 7, 11, 0],
     m: ['-45px 0px 0', null, null, '-30px -10px auto', '35px -10px 0'],
   },

@@ -144,8 +144,8 @@ const styles = {
   header: {
     backgroundColor: 'transparent',
     position: 'fixed',
-    left: 0,
-    right: 0,
+    left: ['0px', null, 0, null],
+    right: ['-20px', null, 0, null],
     py: [5],
     transition: 'all 0.3s ease-in-out 0s',
     '&.is-sticky': {
