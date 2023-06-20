@@ -145,16 +145,18 @@ const Project = () => {
 
 export default Project;
 
-
 const styles = {
   Header: {
     m: ['-10px 0px -20px', null,null, '-30px 0px 20px', '35px -10px 0'],
   },
   plastic: {
-    m: ['0px 0px 0px', null,null, '-380px 508px 0px', '35px -10px 0'],
+    m: ['0px 10px 0px', null,null, '-380px 508px 0px', '35px -10px 0'],
+  },
+  waste: {
+    m: ['0px 10px 0px', null,null, '0px px 0px', '35px -10px 0'],
   },
   drive: {
-    m: ['0px 0px 0px', null,null, '-340px 1008px 0px', '0px 0px 0px'],
+    m: ['0px 10px 0px', null,null, '-340px 1008px 0px', '0px 0px 0px'],
   },
   section: {
     pt: [30, 30, 40, 50, 60],

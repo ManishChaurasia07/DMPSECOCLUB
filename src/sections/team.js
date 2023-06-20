@@ -87,7 +87,7 @@ export default function TeamSection() {
 const styles = {
   grid: {
     mt: [0, null, -6, null, -4],
-    gridGap: ['25px 50px', null, 0, null, null, '20px 30px'],
+    gridGap: ['25px 60px', null, 0, null, null, '20px 30px'],
     gridTemplateColumns: [
       'repeat(2, 1fr)',
       null,
@@ -98,11 +98,13 @@ const styles = {
   },
   heading: {
     mb: [30, 30, 40, 60],
+    width: [390, 500],
+    ml: ['-20px', 400]
   },
   button: {
     minHeight: [50, 50, 50, 60],
     fontSize: [6, 4, 4],
-    m: ['30px 50px 0', null, null, null, '50px 540px 90px'],
+    m: ['30px 40px 0', null, null, null, '50px 540px 90px'],
     maxWidth: ['300px', null, null, null, '80px', '350px'],
     svg: {
       transition: 'margin-left 0.3s ease-in-out 0s',

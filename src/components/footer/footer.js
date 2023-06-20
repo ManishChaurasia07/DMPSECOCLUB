@@ -40,7 +40,7 @@ export default function Footer() {
 const styles = {
   footer: {
     backgroundColor: '#F2F2F2',
-    pt: 6,
+    pt: [0, 6],
   },
   footerTopInner: {
     gap: [50, null, null, null, 0, 50],
@@ -64,9 +64,11 @@ const styles = {
   copyright: {
     display: ['flex'],
     alignItems: 'center',
+    width: 430,
+    ml: -8,
     flexDirection: ['column', null, null, null, 'row'],
     span: {
-      fontSize: '14px',
+      fontSize: '13px',
       lineHeight: 1.29,
       color: rgba('#0F2137', 0.6),
       mt: ['18px', '18px', '7px'],
@@ -79,10 +81,11 @@ const styles = {
     margin: ['15px 0px 0', '15px 0 0', '0'],
     padding: 0,
     display: ['flex'],
+    width: 350,
     flexWrap: ['wrap', null, null, 'unset'],
     justifyContent: ['center', null, 'flex-start'],
     'li + li': {
-      ml: ['18px', null, '20px'],
+      ml: ['16px', null, '20px'],
       '@media only screen and (max-width: 400px)': {
         mb: '10px',
       },

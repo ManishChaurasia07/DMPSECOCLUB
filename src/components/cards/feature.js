@@ -23,7 +23,7 @@ const styles = {
     borderBottom: (t) => [null, null, `2x solid ${t.colors.borderColor}`],
     borderRight: (t) => [null, null, `2px solid ${t.colors.borderColor}`],
     width: ['400px', null, 640, null],
-    alignItems: 'center',
+    ml: ['-15px'],
     padding: [
       '10px 40px',
       null,

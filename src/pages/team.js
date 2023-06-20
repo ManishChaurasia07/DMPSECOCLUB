@@ -234,7 +234,7 @@ const styles = {
   },
   grid: {
     mt: [0, null, -6, null, 4],
-    m: ['20px -95px 0px', null, null, '0px 0px', '0px 0px 0px'],
+    m: ['20px -80px 0px', null, null, '0px 0px', '0px 0px 0px'],
     gridGap: ['25px 55px', null, '20px 0px 0px', null, null, '20px 30px'],
     width: ['200%', '100%'],
     gridTemplateColumns: [

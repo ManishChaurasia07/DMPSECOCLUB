@@ -80,7 +80,7 @@ const Faq = () => {
         <RevealHorizontal>
         <SectionHeading
           sx={{ mb: [6, null, null, 12, 17],
-          ml: 8,
+          width: 400,
           }}
           slogan="Get your question answer"
           title="Frequently asked question"

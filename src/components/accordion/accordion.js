@@ -62,6 +62,7 @@ const styles = {
     alignItems: 'flex-start',
     position: 'relative',
     paddingRight: [null, null, null, 7, 8, 11],
+    ml: [-2, 0],
     marginBottom: [3, null, null, 6, 8],
     paddingBottom: [3, null, null, 6, 8],
     '&.is-open': {

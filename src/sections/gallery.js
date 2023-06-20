@@ -117,12 +117,12 @@ const styles = {
   },
   heading: {
     mb: [30, 30, 40, 60],
-    width: [490, 1220],
-    ml: ['-50px', 10],
+    width: [390, 1220],
+    ml: ['-10px', 10],
   },
   galleryWrapper: {
     mx: '-105px',
-    ml: ['-40px', '-40px'],
+    ml: ['-35px', '-40px'],
   },
   phone: {
     '@media (max-width: 768px)' : {

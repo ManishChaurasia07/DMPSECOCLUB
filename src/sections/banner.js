@@ -72,13 +72,15 @@ const styles = {
       lineHeight: [1.31, null, null, 1.5, null, 1.26],
       letterSpacing: [0, null, null, null, '-1.5px'],
       color: '#12100E',
+      width: [450, 600]
     },
     p: {
       fontSize: ['13px', null, null, 2, 3],
       lineHeight: [1.87, null, null, 2, null, 2.33],
       color: '#000',
       maxWidth: [null, null, 370, 470],
-      m: ['20px auto 0', null, null, null, '25px 0 0'],
+      m: ['20px 20px 0', null, null, null, '25px 0 0'],
+      width: [400, 500],
     },
     button: {
       zIndex: 999,
@@ -89,8 +91,9 @@ const styles = {
       cursor: "pointer",
       display: "inline-flex",
       background: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-      alignItems: "center",
       color: "white",
+      ml: [8, 0],
+      mt: 5,
       border: 'none',
       minHeight: "60px",
       padding: "0 30px",
