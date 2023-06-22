@@ -71,7 +71,7 @@ const Gallery = () => {
         </Box>
         </RevealVertical>
         <RevealHorizontal>
-        <Link href="/photo">
+        <Link href="/gallery">
         <Flex as="form" sx={styles.form}>
       <Button sx={styles.bs}>Explore Our Gallery <IoIosArrowForward size="16px" /></Button>
     </Flex>

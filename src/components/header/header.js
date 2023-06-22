@@ -9,7 +9,6 @@ import Logo from '../../assets/images/dms.png';
 import { NavLink } from 'components/link';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import menuItems from "./header.data";
 import { ChevronDownIcon, ChevronUpIcon } from '@primer/octicons-react';
 
 export default function Header() {
@@ -27,6 +26,32 @@ export default function Header() {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const menuItems = [
+    {
+      label: 'HOME',
+    },
+  ]
+  const gallery = [
+    {
+      label: 'GALLERY',
+    },
+  ]
+  const about = [
+    {
+      label: 'ABOUT',
+    },
+  ]
+  const project = [
+    {
+      label: 'PROJECT',
+    },
+  ]
+  const blog = [
+    {
+      label: 'BLOG'
+    }
+  ]
 
 
   return (
@@ -55,7 +80,7 @@ export default function Header() {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 0.7,
       }}
     >
             <Link href="/">
@@ -74,14 +99,35 @@ export default function Header() {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
             <nav as="nav" sx={styles.navbar} className={'navbar'}>
-              {menuItems.map(({ path, label }, i) => (
-              <NavLink key={i} path={path} label={label} sx={styles.aa}/>
+            {menuItems.map(({  label }, i) => (
+                <Link href="/">
+              <NavLink key={i} label={label} sx={styles.aa}/>
+              </Link>
               ))}
-           
+               {about.map(({  label }, i) => (
+              <Link href="/">
+              <NavLink key={i} label={label} sx={styles.aa}/>
+              </Link>
+              ))}
+              {project.map(({  label }, i) => (
+              <Link href="/project">
+              <NavLink key={i} label={label} sx={styles.aa}/>
+              </Link>
+              ))}
+              {gallery.map(({  label }, i) => (
+              <Link href="/gallery">
+              <NavLink key={i} label={label} sx={styles.aa}/>
+              </Link>
+              ))}
+                  {blog.map(({  label }, i) => (
+              <Link href="/">
+              <NavLink key={i} label={label} sx={styles.aa}/>
+              </Link>
+              ))}
             </nav>
             </motion.div>
             <NavbarDrawer />

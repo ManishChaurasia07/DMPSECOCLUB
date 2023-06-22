@@ -4,10 +4,10 @@ import { Button, Flex, jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import TeamCard from 'components/team-card';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import Member1 from '../assets/images/Team/member-1.png';
 import Member2 from '../assets/images/Team/member-2.png';
 import Member3 from '../assets/images/Team/member-1.png';
-import Member4 from '../assets/images/Team/member-2.png';
+import Member1 from '../assets/images/Team/member-1.png';
+import Member4 from '../assets/images/Team/me.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import SectionHeading from 'components/section-heading';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ import RevealHorizontal from './RevealHori';
 const data = [
   {
     id: 1,
-    imgSrc: Member4,
+    imgSrc: Member1,
     altText: 'Charoo kalra',
     title: 'Charoo kalra',
     designation: 'Incharge',
@@ -27,7 +27,7 @@ const data = [
     imgSrc: Member2,
     altText: 'Soma ..',
     title: 'Soma ..',
-    designation: 'Founder & Incharges',
+    designation: 'Head & Incharge',
   },
   {
     id: 3,
@@ -38,10 +38,10 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: Member3,
+    imgSrc: Member4,
     altText: 'Manish Chaurasia',
     title: 'Manish Chaurasia',
-    designation: 'Web Developer & Designer',
+    designation: 'Vice President & Developer',
   },
 ];
 
@@ -99,12 +99,12 @@ const styles = {
   heading: {
     mb: [30, 30, 40, 60],
     width: [390, 500],
-    ml: ['-20px', 400]
+    ml: ['0px', 400]
   },
   button: {
     minHeight: [50, 50, 50, 60],
     fontSize: [6, 4, 4],
-    m: ['30px 40px 0', null, null, null, '50px 540px 90px'],
+    m: ['30px 70px 0', null, null, null, '50px 540px 90px'],
     maxWidth: ['300px', null, null, null, '80px', '350px'],
     svg: {
       transition: 'margin-left 0.3s ease-in-out 0s',

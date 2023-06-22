@@ -41,7 +41,7 @@ const NavbarDrawer = () => {
   const gallery = [
     {
       label: 'GALLERY',
-      path: "/photo",
+      path: "/gallery",
     },
    
   ]

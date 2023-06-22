@@ -23,7 +23,7 @@ const styles = {
     borderBottom: (t) => [null, null, `2x solid ${t.colors.borderColor}`],
     borderRight: (t) => [null, null, `2px solid ${t.colors.borderColor}`],
     width: ['400px', null, 640, null],
-    ml: ['-15px'],
+    ml: ['0px', 2],
     padding: [
       '10px 40px',
       null,
@@ -47,7 +47,6 @@ const styles = {
       minWidth: [70],
       mb: 8,
       m: ['20px 0px -70px', null, null, null, '15x 0 0'],
-      
     },
     h4: {
       fontSize: 7,
@@ -61,6 +60,7 @@ const styles = {
       fontSize: [1, null, null, null, 2],
       lineHeight: 1.88,
       color: 'headingSecondary',
+      ml: 3,
     },
     a: {
       mt: [2, null, null, null, 6],

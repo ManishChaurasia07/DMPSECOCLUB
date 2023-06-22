@@ -1,7 +1,9 @@
 import 'rc-drawer/assets/index.css';
 import 'assets/css/react-slick.css';
 import "./index.css";
+import theme from './theme'
 import React, { useEffect } from 'react';
+import { ThemeProvider } from 'theme-ui';
 
 export default function CustomApp({ Component, pageProps }) {
   /** 
@@ -11,7 +13,10 @@ export default function CustomApp({ Component, pageProps }) {
      Router.events.on('routeChangeComplete', logPageView);
    }, []);
    */
-
-  return <Component {...pageProps} />;
+  return(
+   <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  )
 }
 

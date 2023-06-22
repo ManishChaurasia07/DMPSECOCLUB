@@ -81,7 +81,7 @@ export default function Header() {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 0.7,
       }}
     >
             <Link href="/">
@@ -100,7 +100,7 @@ export default function Header() {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
             <nav as="nav" sx={styles.navbar} className={'navbar'}>
@@ -120,7 +120,7 @@ export default function Header() {
               </Link>
               ))}
               {gallery.map(({  label }, i) => (
-              <Link href="/photo">
+              <Link href="/gallery">
               <NavLink key={i} label={label} sx={styles.aa}/>
               </Link>
               ))}

@@ -42,7 +42,7 @@ const About = () => {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
             <ScrollReveal>
@@ -72,12 +72,12 @@ const styles = {
     backgroundColor: '#F2F2F2',
     pt: [8, null, null, 12, null, 10],
     pb: [9, null, null, 12, 16, 28],
-    
   },
   heading: {
     marginBottom: [7, null, null, 8, 7],
     alignItem: 'center',
-    ml: 5,
+    ml: [-14, 400],
+    width: 500,
     p: {
       maxWidth: 490,
       margin: ['10px auto 0'],

@@ -71,7 +71,7 @@ const Project = () => {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 0.7,
       }}
     >
       <RevealHorizontal>
@@ -94,7 +94,7 @@ const Project = () => {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
             <RevealVertical>

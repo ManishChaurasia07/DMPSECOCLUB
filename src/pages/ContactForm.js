@@ -145,7 +145,7 @@ export default function Home() {
               </Link>
               ))}
               {gallery.map(({  label }, i) => (
-              <Link href="/photo">
+              <Link href="/gallery">
               <NavLink key={i} label={label} sx={{}}/>
               </Link>
               ))}

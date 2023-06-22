@@ -65,7 +65,7 @@ const Waste = () => {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
     <Box as="section" id="home" sx={styles.section}>
@@ -92,7 +92,7 @@ const Waste = () => {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 0.7,
       }}
     >
       <RevealHorizontal>
@@ -113,7 +113,7 @@ const Waste = () => {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 0.7,
       }}
     >
       <RevealVertical>
@@ -137,7 +137,7 @@ const Waste = () => {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 0.7,
       }}
     >
           {data?.map((item) => (
@@ -159,15 +159,17 @@ const Waste = () => {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
+            <Container sx={styles.right}>
               {right?.map((item) => (
             <Right key={item.id} item={item} />
           ))}
           {rightleft?.map((item) => (
             <RightLeft key={item.id} item={item} />
           ))}
+          </Container>
   </motion.div>
         </Box>
         </RevealHorizontal>
@@ -240,5 +242,7 @@ const styles = {
     textAlign: ['center', null, null, null, 'left'],
     },
   },
+  right: {
+    m: ['20px 0', null, '-630px auto', null, 0],
+  }
 };
-

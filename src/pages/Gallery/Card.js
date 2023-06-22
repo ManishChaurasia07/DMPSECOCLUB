@@ -18,9 +18,10 @@ const styles = {
     borderRadius: 5,
     position: 'relative',
     overflow: 'hidden',
-    alignItems: 'flex-start',
+    display: 'flex',
+    flexWrap: 'wrap',
     mb: 30,
-    m: ['30px 12px 0', null, null, '0px 340px -1px', '35px -10px 0'],
+    m: ['30px 12px 0', null, null, '20px 340px 0px', '35px -10px 0'],
     width: [
       'calc(100% - 30px)',
       'calc(50% - 30px)',

@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Image } from 'theme-ui';
 
-const Data = ({ item }) => {
+const Card = ({ item }) => {
   return (
     <Flex as="figure" sx={styles.figure}>
       <Image loading="lazy" src={item?.image} alt={item?.title} />
@@ -11,18 +11,17 @@ const Data = ({ item }) => {
   );
 };
 
-export default Data;
+export default Card;
 
 const styles = {
   figure: {
     borderRadius: 5,
-    width: '95%',
     position: 'relative',
     overflow: 'hidden',
-    alignItems: 'flex-start',
+    display: 'flex',
+    flexWrap: 'wrap',
     mb: 30,
-    mx: 790,
-    m: ['30px 12px 0', null, null, '28px 790px -1px', '35px -10px 0'],
+    m: ['30px 12px 0', null, null, '20px 780px 0px', '35px -10px 0'],
     width: [
       'calc(100% - 30px)',
       'calc(50% - 30px)',
@@ -34,7 +33,7 @@ const styles = {
       opacity: 0.7,
       content: `''`,
       position: 'absolute',
-      width: '95%',
+      width: '100%',
       height: '100%',
       left: 0,
       top: 0,
@@ -44,14 +43,23 @@ const styles = {
       borderRadius: 5,
       transform: 'scale(1)',
       transition: 'all 0.3s ease-in-out 0s',
-      width: '95%',
+      height: '50%',
     },
     ':hover': {
       img: {
         transform: 'scale(1.2)',
-        width: '95%',
       },
     },
-   
+    figcaption: {
+      color: '#fff',
+      position: 'absolute',
+      fontWeight: 700,
+      fontSize: 5,
+      lineHeight: 1.68,
+      letterSpacing: 'heading',
+      left: 30,
+      bottom: 20,
+      zIndex: 1,
+    },
   },
 };

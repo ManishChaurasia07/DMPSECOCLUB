@@ -28,7 +28,7 @@ const Waste = () => {
         scale: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 0.7,
       }}
     >
     <Box as="section" id="home" sx={styles.section}>
@@ -57,7 +57,7 @@ const Waste = () => {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
             <Heading as="h1">
@@ -76,7 +76,7 @@ const Waste = () => {
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 0.7,
           }}
           >
             <Text as="p">

@@ -12,7 +12,7 @@
       label: 'PROJECTS',
     },
     {
-      path: '/photo',
+      path: '/gallery',
       label: 'GALLERY',
     },
     {

@@ -21,7 +21,7 @@ const RevealVertical = ({ children }) => {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 100 },
       }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 0.7 }}
     >
       {children}
     </motion.div>

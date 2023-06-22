@@ -2,15 +2,14 @@
 /** @jsx jsx */
 import { jsx, Box, Image, Button, MenuButton } from 'theme-ui';
 import React, { useContext } from 'react';
-import { Link } from 'react-scroll';
 import { DrawerContext } from 'contexts/drawer/drawer-context';
 import Drawer from 'components/drawer';
 import Logo from '../../assets/images/dms.png';
-import menuItems from './header.data';
 import close from 'assets/images/icons/close.png';
+import Link from "next/link"
 
 const NavbarDrawer = () => {
-  const { state, dispatch } = useContext(DrawerContext);
+    const { state, dispatch } = useContext(DrawerContext);
 
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
@@ -18,6 +17,40 @@ const NavbarDrawer = () => {
       type: 'TOGGLE',
     });
   }, [dispatch]);
+
+  const menuItems = [
+    {
+      label: 'HOME',
+      path: "/",
+    },
+  ]
+  const about = [
+    {
+      label: 'ABOUT',
+      path: "/",
+    },
+    
+  ]
+  const project = [
+    {
+      label: 'PROJECT',
+      path: "/project",
+    },
+    
+  ]
+  const gallery = [
+    {
+      label: 'GALLERY',
+      path: "/gallery",
+    },
+   
+  ]
+  const blog = [
+    {
+      label: 'BLOG',
+      path: "/",
+    },
+  ]
 
   return (
     <Drawer
@@ -42,23 +75,43 @@ const NavbarDrawer = () => {
       <Box sx={styles.wrapper}>
         <img src={Logo} sx={styles.logo} />
         <Box as="ul" sx={styles.navbar}>
-          {menuItems.map(({ path, label }, i) => (
-            <Box as="li" key={i}>
-              <Link
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {label}
-              </Link>
-            </Box>
-          ))}
-             
+      <li>
+        {menuItems.map(({ path, label }, i) => (
+        <Link href={path} key={i}>
+          <a>{label}</a>
+        </Link>
+      ))}
+      </li>
+      <li>
+      {about.map(({ path, label }, i) => (
+        <Link href={path} key={i}>
+          <a>{label}</a>
+        </Link>
+      ))}
+      </li>
+      <li>
+      {project.map(({ path, label }, i) => (
+        <Link href={path} key={i}>
+          <a>{label}</a>
+        </Link>
+      ))}
+      </li>
+      <li>
+      {gallery.map(({ path, label }, i) => (
+        <Link href={path} key={i}>
+          <a>{label}</a>
+        </Link>
+      ))}
+      </li>
+      <li>
+            {blog.map(({ path, label }, i) => (
+        <Link href={path} key={i}>
+          <a>{label}</a>
+        </Link>
+      ))}
+      </li>
         </Box>
-        <Button sx={styles.donateNow}>
+        <Button variant="primary" sx={styles.donateNow}>
           Get Started
         </Button>
       </Box>
@@ -123,10 +176,11 @@ const styles = {
       backgroundColor: 'transparent',
       borderTop: (t) => `1px solid ${t.colors.borderColor}`,
       color: '#834D80',
-      display: 'flex',
+      display: 'block',
       alignItems: 'center',
       minHeight: 44,
       marginLeft: 6,
+      textDecoration: 'none',
       position: 'relative',
       transition: 'all 0.3s ease-in-out 0s',
     },
