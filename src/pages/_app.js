@@ -1,7 +1,7 @@
 import 'rc-drawer/assets/index.css';
 import 'assets/css/react-slick.css';
 import "./index.css";
-import theme from './theme/index'
+import theme from './theme'
 import React, { useEffect } from 'react';
 import { ThemeProvider } from 'theme-ui';
 
