@@ -1,7 +1,4 @@
-import React from 'react';
-
-const Theme = () => {
-  const theme = {
+export const Theme = {
     colors: {
       text: "#343D48", // body color and primary color
     textSecondary: "#02073E", // secondary body color
@@ -57,8 +54,5 @@ const Theme = () => {
     },
   };
 
-  return <></>; // Replace with your actual component JSX
-
-};
 
 export default Theme;
