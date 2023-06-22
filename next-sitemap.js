@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://startuplanding.redq.io',
+  siteUrl: 'https://dmpsecoclub.com',
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {
