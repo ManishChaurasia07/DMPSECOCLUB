@@ -1,7 +1,5 @@
-import { rgba } from "polished";
-import React from "react";
 
-const theme = {
+export default {
   colors: {
     text: "#343D48", // body color and primary color
     textSecondary: "#02073E", // secondary body color
@@ -57,5 +55,3 @@ const theme = {
     },
   },
 };
-
-export default theme;
