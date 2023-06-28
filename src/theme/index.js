@@ -1,34 +1,7 @@
 import { rgba } from "polished";
 
 export default {
-  styles: {
-    root: {
-      overflowX: 'hidden', // Prevent horizontal scrolling
-    },
-    html: {
-      height: '100%', // Ensure the body takes up the full height of the viewport
-    },
-    body: {
-      height: '100%', // Ensure the body takes up the full height of the viewport
-      display: 'flex',
-      flexDirection: 'column',
-      '> div:first-of-type': {
-        flex: 1, // Make the main content area take up remaining vertical space
-        overflowY: 'scroll', // Enable vertical scrolling
-        scrollbarWidth: 'thin', // Set the width of the scrollbar
-        '&::-webkit-scrollbar': {
-          width: '6px', // Set the width of the scrollbar
-        },
-        '&::-webkit-scrollbar-track': {
-          background: 'transparent', // Set the background color of the scrollbar track
-        },
-        '&::-webkit-scrollbar-thumb': {
-          backgroundColor: 'rgba(0, 0, 0, 0.3)', // Set the color of the scrollbar thumb
-          borderRadius: '3px', // Set the border radius of the scrollbar thumb
-        },
-      },
-    },
-  },
+  
   // example colors with dark mode
   colors: {
     text: "#343D48", // body color and primary color
