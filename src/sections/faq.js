@@ -10,48 +10,29 @@ import Link from 'next/link';
 const data = [
   {
     id: 1,
-    title: `01. What is the purpose of our eco club ?`,
+    title: `01. What is the purpose of an Eco Club?`,
     contents: (
       <div>
-        The purpose of the eco club team is to promote environmental awareness 
-        and sustainability within the school or community. The team may engage in activities  
-        such as organizing recycling programs, implementing energy-saving 
-        initiatives, raising awareness about environmental issues, and undertaking projects
-         to protect and restore the local ecosystem.
+         The purpose of the Eco Club team is to promote environmental awareness and sustainability within the school.
+        Our team has launched projects that combat plastic waste, reduce waste, and promote students to recycle paper.
       </div>
     ),
   },
   {
     id: 2,
-    title: `02. What types of projects or initiatives does the eco club team undertake?`,
+    title: `02. Who are the people associated with the Eco Club?`,
     contents: (
       <div>
-        Eco club teams undertake various projects and initiatives depending on their goals 
-        and targeted environmental issues. These commonly include organizing recycling
-         programs, implementing energy-saving measures, raising awareness through campaigns,
-          participating in community clean-ups, and collaborating with other organizations for broader initiatives. 
+      The Eco Club, led by Achintya,  is comprised of a motivated group of students from 8th to 10th grade who are passionate about creating a sustainable environment within our school. Our mission is to promote environmental awareness and inspire positive change.
       </div>
     ),
   },
   {
     id: 3,
-    title: `03. What activities does the eco club team organize?`,
+    title: `03. What is a goal or aim of an Eco Club team?`,
     contents: (
       <div>
-        The eco club team organizes activities such as recycling programs, 
-        energy-saving measures, awareness campaigns, community clean-ups, educational 
-        workshops, policy advocacy, and collaborations with other organizations.
-         Their goal is to promote environmental awareness and sustainability, inspiring
-          individuals to take action for a greener future.
-      </div>
-    ),
-  },
-  {
-    id: 4,
-    title: `04. What is a goal or aim of an eco club team?`,
-    contents: (
-      <div>
-        The goal of an eco club team is to promote environmental awareness, sustainability, 
+        The goal of an Eco Club team is to promote environmental awareness, sustainability, 
         and conservation within the community. They aim to educate,
          inspire action, and create a greener and more environmentally conscious society. Through raising awareness, 
          implementing eco-friendly initiatives, and advocating for positive change, the team works towards
@@ -60,14 +41,12 @@ const data = [
     ),
   },
   {
-    id: 5,
-    title: `05. How can the eco club make a broader impact beyond the school?`,
+    id: 4,
+    title: `04. How can we contribute our part?`,
     contents: (
       <div>
-        The eco club can make a broader impact by partnering with local environmental
-         organizations, participating in community initiatives, organizing awareness 
-         campaigns, advocating for sustainable policies, and using social media platforms 
-         to engage a wider audience.
+      We always appreciate people who are eager to play their part in saving the environment. 
+      The easiest way you can contribute to the environment is taking part in the various projects. Your active participation will make a significant impact!
       </div>
     ),
   },
@@ -82,8 +61,8 @@ const Faq = () => {
           sx={{ mb: [6, null, null, 12, 17],
           width: 400,
           }}
-          slogan="Get your question answer"
-          title="Frequently asked question"
+          slogan=""
+          title="Frequently asked questions"
         />
   </RevealHorizontal>
   <RevealVertical>
@@ -92,7 +71,7 @@ const Faq = () => {
         <RevealVertical>
           <Link href="/ContactForm">
         <Box sx={styles.loadMore}>
-          <Button variant="text">Still Question? Contact us</Button>
+          <Button variant="text">More questions? Contact us!</Button>
         </Box>
         </Link>
         </RevealVertical>

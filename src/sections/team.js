@@ -20,21 +20,21 @@ const data = [
     imgSrc: Member1,
     altText: 'Charoo kalra',
     title: 'Charoo kalra',
-    designation: 'Incharge',
+    designation: 'Teacher Incharge',
   },
   {
     id: 2,
     imgSrc: Member2,
-    altText: 'Soma ..',
-    title: 'Soma ..',
-    designation: 'Head & Incharge',
+    altText: 'Soma Mitra',
+    title: 'Soma Mitra',
+    designation: 'Teacher Incharge',
   },
   {
     id: 3,
     imgSrc: Member3,
     altText: 'Achintya Pasricha',
     title: 'Achintya Pasricha',
-    designation: 'President',
+    designation: 'Founder',
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export default function TeamSection() {
         <RevealVertical>
         <SectionHeading
         sx={styles.heading}
-          slogan="Our Team"
+          slogan="The Whole Team"
           title="Meet Our Talented Team Members"
         />
         </RevealVertical>

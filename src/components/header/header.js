@@ -124,7 +124,7 @@ export default function Header() {
               </Link>
               ))}
                   {blog.map(({  label }, i) => (
-              <Link href="/">
+              <Link href="/blog">
               <NavLink key={i} label={label} sx={styles.aa}/>
               </Link>
               ))}

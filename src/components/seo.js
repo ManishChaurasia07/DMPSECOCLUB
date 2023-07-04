@@ -5,7 +5,7 @@ export default function SEO({
   description = 'Hi! We protect our environment by taking some of the steps like a collecting of e-waste which is hazardous to our environment and plastic. We all do some acitivity which can protect us from destroying the world!',
   author = 'Manish Chaurasia',
   meta,
-  title = 'DMPS ECO CLUB',
+  title = 'DMPS Eco Club',
 }) {
   const metaData = [
     {

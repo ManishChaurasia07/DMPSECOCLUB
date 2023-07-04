@@ -22,8 +22,9 @@ const styles = {
   feature: {
     borderBottom: (t) => [null, null, `2x solid ${t.colors.borderColor}`],
     borderRight: (t) => [null, null, `2px solid ${t.colors.borderColor}`],
-    width: ['400px', null, 640, null],
+    width: [400, null, 640, null],
     ml: ['0px', 2],
+    m: ['0px 0px 0px', null, null, '30px auto', '0px 0px 0'],
     padding: [
       '10px 40px',
       null,
@@ -46,21 +47,20 @@ const styles = {
       alignItems: 'center',
       minWidth: [70],
       mb: 8,
-      m: ['20px 0px -70px', null, null, null, '15x 0 0'],
+      m: ['20px 0px -70px', '-30px 100px', null, null, '15x 0 0'],
     },
     h4: {
       fontSize: 7,
       fontWeight: 700,
       lineHeight: 1.28,
       color: 'heading',
-      m: ['20px 0 50px 50px', null, null, null, '25px auto 36px'],
-
+      m: ['20px 0 50px 50px', null, null, null, '0px auto 36px'],
     },
     p: {
       fontSize: [1, null, null, null, 2],
       lineHeight: 1.88,
       color: 'headingSecondary',
-      ml: 3,
+      ml: [0, 0],
     },
     a: {
       mt: [2, null, null, null, 6],

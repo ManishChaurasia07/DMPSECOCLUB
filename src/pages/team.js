@@ -7,6 +7,10 @@ import SectionHeading from 'components/section-heading';
 import Member1 from '../assets/images/Team/member-1.png';
 import Member2 from '../assets/images/Team/member-2.png';
 import Member3 from '../assets/images/Team/member-1.png';
+import Unnati from "../assets/images/Team/m1.png";
+import Shivansh from "../assets/images/Team/m3.jpg";
+import Riddhi from "../assets/images/Team/riddhi.jpg";
+import Parnil from "../assets/images/Team/m2.png";
 import Member4 from '../assets/images/Team/me.png';
 import TeamCard from 'components/team-card';
 import Footer from './footer';
@@ -22,22 +26,22 @@ const data = [
       imgSrc: Member2,
       altText: 'Charoo kalra',
       title: 'Charoo kalra',
-      designation: 'Incharge',
+      designation: 'Teacher Incharge',
      
     },
     {
       id: 2,
       imgSrc: Member2,
-      altText: 'Soma ..',
-      title: 'Soma ..',
-      designation: 'Head Incharge',
+      altText: 'Soma Mitra',
+      title: 'Soma Mitra',
+      designation: 'Teacher Incharge',
     },
     {
       id: 3,
       imgSrc: Member3,
       altText: 'Achintya Pasricha',
       title: 'Achintya Pasricha',
-      designation: 'President',
+      designation: 'Founder',
     },
     {
       id: 4,
@@ -48,87 +52,75 @@ const data = [
     },
     {
         id: 5,
-        imgSrc: Member3,
+        imgSrc: Shivansh,
         altText: 'Shivansh Singh',
         title: 'Shivansh Singh',
-        designation: 'Designer',
       },
       {
         id: 6,
         imgSrc: Member2,
         altText: 'Glory Sam',
         title: 'Glory Sam',
-        designation: '...',
       },
       {
         id: 7,
         imgSrc: Member2,
-        altText: 'Navya ...',
-        title: 'Navya ..',
-        designation: '...',
+        altText: 'Navya Gupta',
+        title: 'Navya Gupta',
       },
       {
         id: 8,
         imgSrc: Member2,
         altText: 'Jagriti Bisht',
         title: 'Jagriti Bisht',
-        designation: '...',
       },
       {
         id: 9,
         imgSrc: Member2,
         altText: 'Anushka Goel',
         title: 'Anushka Goel',
-        designation: '...',
       },
       {
         id: 10,
-        imgSrc: Member2,
-        altText: 'Unnati Goel',
-        title: 'Unnati Goel',
-        designation: '...',
+        imgSrc: Unnati,
+        altText: 'Unnati ..',
+        title: 'Unnati ..',
       },
       {
         id: 11,
         imgSrc: Member2,
-        altText: 'Shefali ..',
-        title: 'Shefali ..',
-        designation: '...',
+        altText: 'Shefali Kamra',
+        title: 'Shefali Kamra',
       },
       {
         id: 12,
-        imgSrc: Member2,
+        imgSrc: Riddhi,
         altText: 'Riddhi Bhardwaj',
         title: 'Riddhi Bhardwaj',
-        designation: '...',
       },
       {
         id: 13,
-        imgSrc: Member2,
-        altText: 'Riddhi Bhardwaj',
-        title: 'Riddhi Bhardwaj',
-        designation: '...',
+        imgSrc: Parnil,
+        altText: 'Pranil Tyagi',
+        title: 'Parnil Tyagi',
       },
       {
         id: 14,
         imgSrc: Member3,
         altText: 'Muhammad Bilal',
         title: 'Muhammad Bilal',
-        designation: '...',
       },
       {
         id: 15,
         imgSrc: Member2,
         altText: 'Manya ..',
         title: 'Manya ..',
-        designation: '...',
       },
       {
         id: 16,
         imgSrc: Member2,
         altText: 'Shamreen ..',
         title: 'Shamreen ..',
-        designation: '...',
       },
   ];
 

@@ -3,7 +3,7 @@
     width: 8px; /* Adjust the width as needed */
   }
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: 'transparent';
   }
   ::-webkit-scrollbar-thumb {
     background-color: #CBD5E0; /* Change this to your desired hover background color */

@@ -31,11 +31,6 @@ const Banner = () => {
             <Heading as="h2">
             a sustainable world
             </Heading>
-            <Text as="p">
-              The phrase highlights the interconnectedness between 
-              individual mindset and collective efforts in achieving
-               a sustainable future.
-            </Text>
             <Button sx={styles.button}>Get Started</Button>
           </Box>
         </Box>

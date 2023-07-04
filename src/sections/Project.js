@@ -25,10 +25,10 @@ const Project = () => {
           <Box sx={styles.content}>
             <RevealHorizontal>
             <Heading sx={styles.title}>
-              Empowering Change: Eco Club Launches Ambitious Project to Create Sustainable Future
+            Initiatives for a sustainable school environment
             </Heading>
             <Text as="p" sx={styles.summary}>
-              In a bold move towards a sustainable future, the Eco Club has embarked on an ambitious project titled "Empowering Change." With a mission to combat environmental challenges and promote eco-consciousness, the club aims to spearhead transformative initiatives within the community. 
+            We have launched several successful initiatives that combat plastic waste, reduce waste, and promote students to recycle paper.
             </Text>
             </RevealHorizontal>
             <RevealVertical>
@@ -59,7 +59,7 @@ const fadeRight = keyframes`
 
 const styles = {
   section: {
-    pt: [8, null, 12, 6, null, 15],
+    pt: [8, null, 12, 6, null, 5],
     pb: [null, null, null, 8, 0],
   },
   grid: {

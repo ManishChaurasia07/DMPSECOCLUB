@@ -15,14 +15,16 @@ const data = [
     icon: icon5,
     path: '#!',
     title: 'WHO WE ARE',
-    description: `We are the dedicated members of the Eco Club team, united by our passion for the environment and our collective goal of making a positive impact on our planet. Comprising students, teachers, and community members, we come from diverse backgrounds but share a common vision: to protect and preserve the natural world. We believe that through education, awareness, and hands-on initiatives, we can inspire change and promote sustainable practices within our school and beyond.`,
+    description: `We are a group of dedicated and passionate students from grades 8 to 10, united by our love for the environment. Our primary goal is to promote a sustainable and eco-friendly environment within our school and beyond.
+    Through various initiatives and projects, we aim to raise awareness about environmental issues and encourage sustainable practices among students, teachers, and the whole school.
+    `,
   },
   {
     id: 2,
     icon: icon6,
     path: '#!',
     title: 'WHAT WE DO',
-    description: `We are the dedicated members of the Eco Club team, united by our passion for the environment and our collective goal of making a positive impact on our planet. Comprising students, teachers, and community members, we come from diverse backgrounds but share a common vision: to protect and preserve the natural world. We believe that through education, awareness, and hands-on initiatives, we can inspire change and promote sustainable practices within our school and beyond.`,
+    description: `We are passionate about creating a sustainable environment within our school and beyond. Our club focuses on launching various projects that actively promote eco-friendly practices, including waste reduction, plastic recycling, and responsible consumption. By implementing these initiatives, we strive to establish a greener and healthier school environment for all.`
   },
 ];
 const About = () => {

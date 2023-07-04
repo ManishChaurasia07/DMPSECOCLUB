@@ -40,7 +40,8 @@ export default function Footer() {
 const styles = {
   footer: {
     backgroundColor: '#F2F2F2',
-    pt: [0, 6],
+    pt: [0, 0],
+    mb: [0, -10]
   },
   footerTopInner: {
     gap: [50, null, null, null, 0, 50],
@@ -64,7 +65,7 @@ const styles = {
   copyright: {
     display: ['flex'],
     alignItems: 'center',
-    width: 430,
+    width: [430 ,630],
     ml: -8,
     flexDirection: ['column', null, null, null, 'row'],
     span: {

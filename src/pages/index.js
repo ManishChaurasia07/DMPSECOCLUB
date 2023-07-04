@@ -6,7 +6,6 @@ import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import About from 'sections/About';
 import Project from 'sections/Project';
-import Blog from 'sections/blog';
 import Faq from 'sections/faq';
 import Gallery from 'sections/gallery';
 import TeamSection from 'sections/team';
@@ -27,7 +26,6 @@ export default function IndexPage() {
         <Project />
         <Gallery />
         <TeamSection />
-        <Blog />
         <Faq />
       </Layout>
     </ThemeProvider>
