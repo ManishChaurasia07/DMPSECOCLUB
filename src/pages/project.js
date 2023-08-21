@@ -1,50 +1,21 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Container, Text, Button, ThemeProvider } from 'theme-ui';
-import Masonry from 'react-masonry-component';
 import SEO from 'components/seo';
 import SectionHeading from 'components/section-heading';
-import GalleryCard from 'pages/Gallery/gallery-cards';
-import gallery1 from 'assets/images/Ewaste.jpg';
-import gallery2 from 'assets/images/metal.jpg';
-import gallery3 from 'assets/images/plastic.jpg';
+import Ewaste from 'assets/images/ew.jpg';
+import Plastic from 'assets/images/trash.jpg';
+import Paper from 'assets/images/paper.jpg';
+import Upcoming from "assets/images/upcoming.jpg";
 import Footer from './footer';
 import Header from './Header/header';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import emoji from 'assets/images/emoji.png'
 import RevealHorizontal from 'sections/RevealHori';
 import RevealVertical from 'sections/RevealUp';
-import theme from 'theme';
-
-const data = [
-  {
-    id: 1,
-    image: gallery1,
-    title: "E-Waste Recycling Drive",
-    path: "/waste"
-  },
-];
-const plastic = [
-  {
-    id: 2,
-    image: gallery2,
-    title: "Plastic Drive",
-    path: "/"
-  },
-]
-const drive = [
-   
-  {
-    id: 3,
-    image: gallery3,
-    title: "Plastic",
-    path: "/"
-  }
-]
-
-const masonryOptions = {
-  transitionDuration: 0,
-};
+import Image from 'components/image';
+import { HiEmojiHappy } from 'react-icons/hi';
 
 const Project = () => {
   return (
@@ -97,36 +68,229 @@ const Project = () => {
             duration: 0.7,
           }}
           >
+
             <RevealVertical>
-        <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-          <Container sx={styles.waste}>
-        {data?.map((item) => (
-      <Link href={item.path} key={item.id}>
-        <a>
-          <GalleryCard key={item.id} item={item} />
-        </a>
-      </Link>
-    ))}
-  </Container>
-  <Container sx={styles.plastic}>
-{plastic?.map((item) => (
-      <Link href={item.path} key={item.id}>
-        <a>
-          <GalleryCard key={item.id} item={item} />
-        </a>
-      </Link>
-    ))}
-</Container>
-  <Container sx={styles.drive}>
-    {drive?.map((item) => (
-      <Link href={item.path} key={item.id}>
-        <a>
-          <GalleryCard key={item.id} item={item} />
-        </a>
-      </Link>
-    ))}
-    </Container>
-        </Box>
+              <Container sx={{
+                margin: ['20px 20px','0']
+              }}>
+       <Container sx={{
+        transform: 'translate(0, -4px)',
+        boxShadow: '14px 14px 40px rgba(118, 126, 173, .12)',
+        width: ['90%','28%'],
+        borderRadius: '20px',
+        margin: ['20px 0px', '0px 60px'],
+        display: 'flex'
+       }}>
+
+        <Container sx={{
+          backgroundColor: '#fff',
+          borderRadius: '20px',
+          padding: '15px 16px 35px',
+          transition: 'all .3s ease-out',
+          overflow: 'hidden',
+          boxShadow: '14px 14px 40px rgba(118, 126, 173, .08)',
+        }}>
+          <Image src={Plastic} sx={{ 
+            width: '100%',
+            minHeight: '220px',
+            borderRadius: '14px',
+            }}/>
+            <Button sx={{
+              backgroundColor: '#e9f9f0',
+              borderRadius: '50px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: '10px',
+              padding: '12px 20px',
+              display: 'flex',
+              marginTop: '15px',
+              color: '#38cb89',
+              letterSpacing: '1.5px',
+              fontSize: '13px',
+              fontWeight: '500'
+            }}>PLASTIC COLLECTION</Button>
+            
+            <Text sx={{
+              color: '#546681',
+              maxWidth: '490px',
+              fontSize: '17px',
+              fontStyle: 'normal',
+              lineHeight: 1.3,
+            }}>
+"Transforming waste into wonder through meaningful plastic collection – making a vital impact on our environment and future."
+            </Text>
+            <Link href='/plastic'>
+            <Button sx={{
+              backgroundColor: '#484dff',
+              borderRadius: '50px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: '10px',
+              marginTop: '20px',
+              padding: '12px 20px',
+              display: 'flex',
+              marginTop: '15px',
+              color: '#fff',
+              letterSpacing: '1.5px',
+              fontSize: '16px',
+              ':hover': {
+              backgroundColor: "#3898ec",
+              border: 0,
+              cursor: 'pointer',
+              lineHeight: 'inherit',
+              textDecoration: 'none',
+              }
+            }}>Learn More</Button>
+            </Link>
+        </Container>
+       </Container>
+       <Container sx={{
+        transform: 'translate(0, -4px)',
+        boxShadow: '14px 14px 40px rgba(118, 126, 173, .12)',
+        width: ['90%','28%'],
+        borderRadius: '20px',
+        margin: ['0px 0px', '-475px 490px 100px'],
+        display: 'flex'
+       }}>
+
+        <Container sx={{
+          backgroundColor: '#fff',
+          borderRadius: '20px',
+          padding: '15px 16px 35px',
+          transition: 'all .3s ease-out',
+          overflow: 'hidden',
+          boxShadow: '14px 14px 40px rgba(118, 126, 173, .08)',
+        }}>
+          <Image src={Ewaste} sx={{ 
+            width: '100%',
+            minHeight: '220px',
+            borderRadius: '14px',
+            }}/>
+            <Button sx={{
+              backgroundColor: '#e9f9f0',
+              borderRadius: '50px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: '10px',
+              padding: '12px 20px',
+              display: 'flex',
+              marginTop: '15px',
+              color: '#38cb89',
+              letterSpacing: '1.5px',
+              fontSize: '13px',
+              fontWeight: '500'
+            }}>E-WASTE</Button>
+            
+            <Text sx={{
+              color: '#546681',
+              maxWidth: '490px',
+              fontSize: '17px',
+              fontStyle: 'normal',
+              lineHeight: 1.3,
+            }}>
+              "Technotrash Turnaround: Act Today, Recycle E-Waste. Transforming Waste into Sustainable Progress."
+            </Text>
+            <Link href="/ewaste">
+            <Button sx={{
+              backgroundColor: '#484dff',
+              borderRadius: '50px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: '10px',
+              marginTop: '20px',
+              padding: '12px 20px',
+              display: 'flex',
+              marginTop: '15px',
+              color: '#fff',
+              letterSpacing: '1.5px',
+              fontSize: '16px',
+              ':hover': {
+              backgroundColor: "#3898ec",
+              border: 0,
+              cursor: 'pointer',
+              lineHeight: 'inherit',
+              textDecoration: 'none',
+              }
+            }}>Learn More</Button>
+            </Link>
+        </Container>
+       </Container>
+       <Container sx={{
+        transform: 'translate(0, -4px)',
+        boxShadow: '14px 14px 40px rgba(118, 126, 173, .12)',
+        width: ['90%','28%'],
+        borderRadius: '20px',
+        margin: ['20px 0px -60px', '-574px 930px 100px'],
+        display: 'flex',
+       }}>
+
+        <Container sx={{
+          backgroundColor: '#fff',
+          borderRadius: '20px',
+          padding: '15px 16px 35px',
+          transition: 'all .3s ease-out',
+          overflow: 'hidden',
+          boxShadow: '14px 14px 40px rgba(118, 126, 173, .08)',
+        }}>
+          <Image src={Upcoming} sx={{ 
+            width: '100%',
+            minHeight: '220px',
+            borderRadius: '14px',
+            }}/>
+            <Button sx={{
+              backgroundColor: '#e9f9f0',
+              borderRadius: '50px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: '10px',
+              padding: '12px 20px',
+              display: 'flex',
+              marginTop: '15px',
+              color: '#38cb89',
+              letterSpacing: '1.5px',
+              fontSize: '13px',
+              fontWeight: '500'
+            }}>In-Progress</Button>
+            
+            <Text sx={{
+              color: '#546681',
+              maxWidth: '490px',
+              fontSize: '17px',
+              fontStyle: 'normal',
+              lineHeight: 1.3,
+            }}>
+    Exciting Project Coming Soon! Stay tuned for an innovative endeavor that will transform the way you experience. Launching shortly.<img src={emoji} sx={{
+      height: '5%',
+      width: '5%',
+    }} />
+            </Text>
+            <Link href="">
+            <Button sx={{
+              backgroundColor: '#484dff',
+              borderRadius: '50px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: ['10px','10px'],
+              marginTop: '20px',
+              padding: '12px 20px',
+              display: 'flex',
+              marginTop: '15px',
+              color: '#fff',
+              letterSpacing: '1.5px',
+              fontSize: '16px',
+              ':hover': {
+              backgroundColor: "#3898ec",
+              border: 0,
+              cursor: 'pointer',
+              lineHeight: 'inherit',
+              textDecoration: 'none',
+              }
+            }}>Learn More</Button>
+            </Link>
+        </Container>
+       </Container>
+
+       </Container>
         </RevealVertical>
         </motion.div>
       </Container>
@@ -149,22 +313,17 @@ const styles = {
   Header: {
     m: ['-10px 0px -20px', null,null, '-30px 0px 20px', '35px -10px 0'],
   },
-  plastic: {
-    m: ['0px 10px 0px', null,null, '-380px 508px 0px', '35px -10px 0'],
-  },
-  waste: {
-    m: ['0px 10px 0px', null,null, '0px px 0px', '35px -10px 0'],
-  },
-  drive: {
-    m: ['0px 10px 0px', null,null, '-340px 1008px 0px', '0px 0px 0px'],
-  },
   section: {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
+    padding: ['120px 5%', '120px 5%'],
+    background: `url(https://uploads-ssl.webflow.com/64c29158c3eb63eb40104787/64c29158c3eb63eb40104861_bg_shade.svg) no-repeat top / cover`,
   },
   heading: {
     mb: [30, 30, 40, 60],
-    m: ['60px 0px 0', null, null, '100px 25px 0', '35px -30px 0'],
+    m: ['0px 0px 0', null, null, '30px 25px 0', '35px -30px 0'],
     color: ['#02073E'],
+    width: ['100%', '100%'],
+    fontFamily: 'Inter, sans-serif',
   },
 };

@@ -14,6 +14,7 @@ const Card = ({ item }) => {
 export default Card;
 
 const styles = {
+  
   figure: {
     borderRadius: 5,
     position: 'relative',
@@ -21,7 +22,7 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     mb: 30,
-    m: ['30px 12px 0', null, null, '20px 340px 0px', '35px -10px 0'],
+    m: ['40px 12px -10px', null, null, '0px 340px 0px', '35px -10px 0'],
     width: [
       'calc(100% - 30px)',
       'calc(50% - 30px)',

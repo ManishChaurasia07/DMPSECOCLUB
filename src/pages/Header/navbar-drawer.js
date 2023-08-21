@@ -40,15 +40,15 @@ const NavbarDrawer = () => {
   ]
   const gallery = [
     {
-      label: 'GALLERY',
-      path: "/gallery",
+      label: 'MEDIA',
+      path: "/media",
     },
    
   ]
   const blog = [
     {
       label: 'BLOG',
-      path: "/",
+      path: "/blog",
     },
   ]
 
@@ -73,8 +73,7 @@ const NavbarDrawer = () => {
       closeBtnStyle={styles.close}
     >
       <Box sx={styles.wrapper}>
-        <img src={Logo} sx={styles.logo} />
-        <Box as="ul" sx={styles.navbar}>
+      <Box as="ul" sx={styles.navbar}>
       <li>
         {menuItems.map(({ path, label }, i) => (
         <Link href={path} key={i}>
@@ -82,6 +81,11 @@ const NavbarDrawer = () => {
         </Link>
       ))}
       </li>
+      <hr sx={{
+        marginLeft: '20px',
+        marginRight: 10,
+        marginTop: -2,
+      }}></hr>
       <li>
       {about.map(({ path, label }, i) => (
         <Link href={path} key={i}>
@@ -89,6 +93,11 @@ const NavbarDrawer = () => {
         </Link>
       ))}
       </li>
+      <hr sx={{
+        marginLeft: '20px',
+        marginRight: 10,
+        marginTop: -2,
+      }}></hr>
       <li>
       {project.map(({ path, label }, i) => (
         <Link href={path} key={i}>
@@ -96,6 +105,11 @@ const NavbarDrawer = () => {
         </Link>
       ))}
       </li>
+      <hr sx={{
+        marginLeft: '20px',
+        marginRight: 10,
+        marginTop: -2,
+      }}></hr>
       <li>
       {gallery.map(({ path, label }, i) => (
         <Link href={path} key={i}>
@@ -103,17 +117,24 @@ const NavbarDrawer = () => {
         </Link>
       ))}
       </li>
+      <hr sx={{
+        marginLeft: '20px',
+        marginRight: 10,
+        marginTop: -2,
+      }}></hr>
       <li>
             {blog.map(({ path, label }, i) => (
         <Link href={path} key={i}>
-          <a>{label}</a>
+          <a sx={styles.name}>{label}</a>
         </Link>
       ))}
       </li>
+      <hr sx={{
+        marginLeft: '20px',
+        marginRight: 10,
+        marginTop: -2,
+      }}></hr>
         </Box>
-        <Button variant="primary" sx={styles.donateNow}>
-          Get Started
-        </Button>
       </Box>
     </Drawer>
   );
@@ -126,7 +147,8 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: '0',
-    width: '26px',
+    color: '#646464',
+    width: '56px',
     cursor: 'pointer',
     '@media screen and (min-width: 1024px)': {
       display: 'none',
@@ -170,13 +192,13 @@ const styles = {
   navbar: {
     listStyle: 'none',
     m: 0,
+    mt: 10,
     p: 0,
     cursor: 'pointer',
     'li > a': {
       backgroundColor: 'transparent',
       borderTop: (t) => `1px solid ${t.colors.borderColor}`,
       color: '#834D80',
-      mt: 1,
       display: 'block',
       alignItems: 'center',
       minHeight: 44,
@@ -191,22 +213,5 @@ const styles = {
     '.active': {
       color: '#FFD662FF',
     },
-  },
-  donateNow: {
-    fontSize: 1,
-    minHeight: 45,
-    margin: 'auto 30px 40px',
-    backgroundColor: "transparent",
-    fontFamily: "body",
-    fontWeight: "bold",
-    borderRadius: "5px",
-    cursor: "pointer",
-    display: "inline-flex",
-    background: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-    alignItems: "center",
-    justifyContent: "center",
-    color: "white",
-    border: 'none',
-    minHeight: "60px",
   },
 };

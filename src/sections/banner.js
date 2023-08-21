@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Heading, Text, Button } from 'theme-ui';
-import illustration from 'assets/images/Bax.png';
+import illustration from 'assets/images/ban5.png';
 import {motion} from "framer-motion";
 
 const Banner = () => {
@@ -25,13 +25,6 @@ const Banner = () => {
     >
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
-            <Heading as="h1">
-            Cultivating green minds, shaping
-            </Heading>
-            <Heading as="h2">
-            a sustainable world
-            </Heading>
-            <Button sx={styles.button}>Get Started</Button>
           </Box>
         </Box>
     </motion.div>
@@ -45,9 +38,9 @@ export default Banner;
 const styles = {
   section: {
     background: `transparent url(${illustration}) no-repeat center top / cover `,
-    pt: [18, null, null, 10, null, null, 0],
-    pb: [12, null, null, 12, 7, 11, 0],
-    m: ['0px -98px 0', null, null, null, '-30px 0px 0'],
+    pt: [290, null, null, 10, null, null, 0],
+    pb: [15, null, null, 12, 7, 11, 0],
+    m: ['0px -98px 0px -60px', null, null, null, '-30px 0px 0px'],
   },
   contentWrapper: {
     gap: [null, null, null, null, 8, 15],

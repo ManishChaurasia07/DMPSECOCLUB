@@ -4,19 +4,27 @@ import { jsx, Box, Container, Text, Button, Grid, ThemeProvider } from 'theme-ui
 import Masonry from 'react-masonry-component';
 import SEO from 'components/seo';
 import SectionHeading from 'components/section-heading';
-import Member1 from '../assets/images/Team/member-1.png';
-import Member2 from '../assets/images/Team/member-2.png';
-import Member3 from '../assets/images/Team/member-1.png';
+import Member2 from '../assets/images/Team/person.jpg';
 import Unnati from "../assets/images/Team/m1.png";
-import Shivansh from "../assets/images/Team/m3.jpg";
+import glory from "../assets/images/Team/glory.png";
+import Bilal from "../assets/images/Team/bilal.png";
+import Shivansh from "../assets/images/Team/Shivansh.jpg";
 import Riddhi from "../assets/images/Team/riddhi.jpg";
 import Parnil from "../assets/images/Team/m2.png";
-import Member4 from '../assets/images/Team/me.png';
+import Anushka from "../assets/images/Team/anushka.png";
+import Siddanth from "../assets/images/Team/Siddanth.png";
+import Jagriti from "../assets/images/Team/jagriti.png";
+import SomaMitra from "../assets/images/Team/teacher.png";
+import Achintya from "../assets/images/Team/achintya.png";
+import Manya from "../assets/images/Team/manya.png";
+import Shamreen from "../assets/images/Team/shamreen.png";
+import Navya from "../assets/images/Team/Navya.png";
+import Shefali from "../assets/images/Team/Shefali.png";
+import Manish from '../assets/images/Team/manish.png';
 import TeamCard from 'components/team-card';
 import Footer from './footer';
 import Header from './Header/header';
 import { motion } from 'framer-motion';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import RevealHorizontal from 'sections/RevealHori';
 import theme from 'theme';
 
@@ -31,24 +39,24 @@ const data = [
     },
     {
       id: 2,
-      imgSrc: Member2,
+      imgSrc: SomaMitra,
       altText: 'Soma Mitra',
       title: 'Soma Mitra',
       designation: 'Teacher Incharge',
     },
     {
       id: 3,
-      imgSrc: Member3,
+      imgSrc: Achintya,
       altText: 'Achintya Pasricha',
       title: 'Achintya Pasricha',
       designation: 'Founder',
     },
     {
       id: 4,
-      imgSrc: Member4,
+      imgSrc: Manish,
       altText: 'Manish Chaurasia',
       title: 'Manish Chaurasia',
-      designation: 'Vice President & Developer',
+      designation: 'Vice President',
     },
     {
         id: 5,
@@ -58,37 +66,37 @@ const data = [
       },
       {
         id: 6,
-        imgSrc: Member2,
+        imgSrc: glory,
         altText: 'Glory Sam',
         title: 'Glory Sam',
       },
       {
         id: 7,
-        imgSrc: Member2,
+        imgSrc: Navya,
         altText: 'Navya Gupta',
         title: 'Navya Gupta',
       },
       {
         id: 8,
-        imgSrc: Member2,
+        imgSrc: Jagriti,
         altText: 'Jagriti Bisht',
         title: 'Jagriti Bisht',
       },
       {
         id: 9,
-        imgSrc: Member2,
+        imgSrc: Anushka,
         altText: 'Anushka Goel',
         title: 'Anushka Goel',
       },
       {
         id: 10,
         imgSrc: Unnati,
-        altText: 'Unnati ..',
-        title: 'Unnati ..',
+        altText: 'Unnati Goel',
+        title: 'Unnati Goel',
       },
       {
         id: 11,
-        imgSrc: Member2,
+        imgSrc: Shefali,
         altText: 'Shefali Kamra',
         title: 'Shefali Kamra',
       },
@@ -106,22 +114,28 @@ const data = [
       },
       {
         id: 14,
-        imgSrc: Member3,
-        altText: 'Muhammad Bilal',
-        title: 'Muhammad Bilal',
+        imgSrc: Bilal,
+        altText: 'Mohd. Bilal Khan',
+        title: 'Mohd. Bilal Khan',
       },
       {
         id: 15,
-        imgSrc: Member2,
-        altText: 'Manya ..',
-        title: 'Manya ..',
+        imgSrc: Manya,
+        altText: 'Manya Bhatia',
+        title: 'Manya Bhatia',
       },
       {
         id: 16,
-        imgSrc: Member2,
-        altText: 'Shamreen ..',
-        title: 'Shamreen ..',
+        imgSrc: Shamreen,
+        altText: 'Shamreen',
+        title: 'Shamreen',
       },
+      {
+        id: 17,
+        imgSrc: Siddanth,
+        altText: 'Siddant',
+        title: 'Siddhant Mathur'
+      }
   ];
 
 const masonryOptions = {

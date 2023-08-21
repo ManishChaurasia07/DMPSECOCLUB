@@ -13,10 +13,9 @@ export default[
     label: 'PROJECT',
   },
   {
-    path: 'gallery',
-    label: 'GALLERY',
+    path: 'media',
+    label: 'MEDIA',
   },
- 
   {
     path: 'blog',
     label: 'BLOG',

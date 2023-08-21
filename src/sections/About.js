@@ -3,8 +3,8 @@
 import { jsx, Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Feature from 'components/cards/feature';
-import icon5 from 'assets/images/features/hein.png';
-import icon6 from 'assets/images/features/goal.png';
+import icon5 from 'assets/images/features/bulb.png';
+import icon6 from 'assets/images/features/rocket.png';
 import { motion } from 'framer-motion';
 import ScrollReveal from './RevealUp';
 
@@ -71,7 +71,6 @@ export default About;
 
 const styles = {
   section: {
-    backgroundColor: '#F2F2F2',
     pt: [8, null, null, 12, null, 10],
     pb: [9, null, null, 12, 16, 28],
   },
@@ -79,10 +78,12 @@ const styles = {
     marginBottom: [7, null, null, 8, 7],
     alignItem: 'center',
     ml: [-14, 400],
+    fontFamily: `'Inter', sans-serif`,
     width: 500,
     p: {
       maxWidth: 490,
       margin: ['10px auto 0'],
+      fontFamily: 'body',
     },
   },
   grid: {
@@ -96,7 +97,5 @@ const styles = {
       null,
       'repeat(2, 1fr)',
     ],
-    borderTop: (t) => [null, null, `1px solid ${t.colors.borderColor}`],
-    borderLeft: (t) => [null, null, `1px solid ${t.colors.borderColor}`],
   },
 };

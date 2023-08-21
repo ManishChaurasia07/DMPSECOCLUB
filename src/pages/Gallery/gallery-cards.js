@@ -18,6 +18,8 @@ const styles = {
     borderRadius: 5,
     position: 'relative',
     overflow: 'hidden',
+    display: 'flex', // Change display to 'flex' for vertical layout
+    flexDirection: 'row', // Arrange items vertically
     alignItems: 'flex-start',
     mb: 30,
     mx: 2,
@@ -55,7 +57,7 @@ const styles = {
       position: 'absolute',
       fontWeight: 700,
       fontSize: 5,
-      lineHeight: 1.68,
+      lineHeight: 1.08,
       letterSpacing: 'heading',
       left: 30,
       bottom: 20,

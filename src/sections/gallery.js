@@ -1,17 +1,17 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Container, Image, Button, Flex } from 'theme-ui';
-import { RiArrowRightSLine } from 'react-icons/ri';
 import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 import Link from 'next/link';
 import gallery1 from 'assets/images/Inaugration.png';
-import gallery2 from 'assets/images/Batches.png';
+import gallery2 from 'assets/images/gall2.png';
 import gallery3 from 'assets/images/p.png';
 import gallery4 from 'assets/images/winner.jpg';
 import gallery5 from 'assets/images/patlu.png';
 import gallery6 from 'assets/images/junior.png';
+import background from "assets/images/triangle.svg";
 import { keyframes } from '@emotion/react';
 import { IoIosArrowForward } from 'react-icons/io';
 import RevealHorizontal from './RevealHori';
@@ -71,11 +71,11 @@ const Gallery = () => {
         </Box>
         </RevealVertical>
         <RevealHorizontal>
-        <Link href="/gallery">
-        <Flex as="form" sx={styles.form}>
-      <Button sx={styles.bs}>Explore Our Gallery <IoIosArrowForward size="16px" /></Button>
-    </Flex>
-        </Link>
+        <Container sx={styles.button}>
+            <Link href="/media">
+            <Button sx={styles.bs}>Explore Our Gallery<IoIosArrowForward size="16px" /></Button>
+            </Link>
+            </Container>
         </RevealHorizontal>
       </Container>
     </Box>
@@ -94,31 +94,32 @@ const fadeRight = keyframes`
   }
 `;
 const styles = {
-  form: {
-    ml: [7, 0],
-    width: ['100%'],
-    button: {
-      m: ['10px 50px 0', null, null, null, '5px 540px 0'],
-      borderRadius: '40px',
+  button: {
+    m: ['10px 50px 0px', null, null, '0px auto', '5px 530px -40px'],
+  },
+  bs: {
+    borderRadius: '40px',
+    svg: {
+      transform: 'translateX(3px)',
+      width: ['13px', null, null, '16px'],
+    },
+    ':hover': {
       svg: {
-        transform: 'translateX(3px)',
-        width: ['13px', null, null, '16px'],
-      },
-      ':hover': {
-        svg: {
-          animation: `${fadeRight} 0.5s linear`,
-        },
+        animation: `${fadeRight} 0.5s linear`,
       },
     },
   },
   section: {
     pt: [30, 30, 40, 50, 60],
     pb: [60, 60, 60, 90, 80, 120],
+    padding: ['120px 5%', '120px 5%'],
+    background: `url(https://uploads-ssl.webflow.com/64c29158c3eb63eb40104787/64c29158c3eb63eb40104861_bg_shade.svg) no-repeat top / cover`,
   },
   heading: {
-    mb: [30, 30, 40, 60],
+    mb: [30, 30, 40, 10],
     width: [390, 1220],
     ml: ['-10px', 10],
+    fontFamily: 'headingAlt'
   },
   galleryWrapper: {
     mx: '-105px',

@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Heading, Text,  } from 'theme-ui';
-import illustration from 'assets/images/blog/Blog11.png';
+import illustration from 'assets/images/blog/blogs1.png';
 import SEO from 'components/seo';
 import Header from '../Header/header';
 import Footer from '../footer';
@@ -238,7 +238,7 @@ export default Waste;
 
 const styles = {
  Header: {
-    m: ['30px 0px 0', null,null, '15px 0px 0px', '35px -20px 0'],
+    m: ['30px 0px 0', null,null, '0px 0px 0px', '35px -20px 0'],
   },
   heading: {
     mb: [60, 30, 40, 60],
@@ -246,9 +246,9 @@ const styles = {
   },
   section: {
     background: `transparent url(${illustration}) no-repeat center top / cover `,
-    pt: [328, null, null, 518, null, null, 19],
+    pt: [328, null, null, 538, null, null, 19],
     pb: [13, null, null, 85, 7, 11, 0],
-    m: ['-30px -20px 0', null, null, '-30px 0px auto', '35px -10px 0'],
+    m: ['-30px -20px 0', null, null, '0px 0px auto', '35px -10px 0'],
   },
   contentWrapper: {
     gap: [null, null, null, null, 8, 15],

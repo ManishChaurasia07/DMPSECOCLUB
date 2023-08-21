@@ -65,10 +65,7 @@ const styles = {
     ml: [-2, 8],
     marginBottom: [3, null, null, 6, 8],
     paddingBottom: [3, null, null, 6, 8],
-    '&.is-open': {
-      borderWidth: 2,
-      borderColor: 'heading',
-    },
+    
   },
   title: {
     color: 'heading',
@@ -80,6 +77,7 @@ const styles = {
   },
   content: {
     width: ['380px', 600],
+    fontFamily: 'body',
     fontSize: [1, null, null, 2],
     '> div': {
       paddingTop: [1, null, null, 0],

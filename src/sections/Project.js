@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Grid, Heading, Text, Button } from 'theme-ui';
 import Image from 'components/image';
-import support from 'assets/images/oh.png';
+import support from 'assets/images/person.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import { keyframes } from '@emotion/react';
 import Link from 'next/link';
@@ -34,7 +34,7 @@ const Project = () => {
             <RevealVertical>
             <Container sx={styles.button}>
             <Link href="/project">
-            <Button sx={styles.bs}>Explore Our Project <IoIosArrowForward size="16px" /></Button>
+            <Button sx={styles.bs}>Our Project <IoIosArrowForward size="16px" /></Button>
             </Link>
             </Container>
             </RevealVertical>
@@ -102,13 +102,12 @@ const styles = {
     maxWidth: [null, null, null, 420, 560, 'none'],
     margin: [null, null, null, '0 auto', 'unset'],
     textAlign: ['center', null, null, null, 'left'],
-    
   },
   title: {
     color: 'heading',
     fontFamily: 'headingAlt',
-    fontSize: [4, null, null, 8, null, null, 11],
     fontWeight: 500,
+    fontSize: [4, null, null, 8, null, null, 11],
     ml: [10, 0],
     lineHeight: [1.33, null, 1.4, 1.53],
     letterSpacing: ['-0.5px', null, null, '-1px'],
@@ -120,25 +119,11 @@ const styles = {
   },
   summary: {
     color: 'textSecondary',
+    fontFamily: 'body',
     fontSize: ['13px', null, null, 2, '15px', 2],
     lineHeight: [1.86, null, null, null, 1.86, 2.25],
     width: [420, 500],
     ml: [50, 0],
-  },
-  list: {
-    gap: '0 18px',
-    gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(2, 200px)'],
-    justifyContent: [null, null, null, 'center', 'unset'],
-    listStyle: 'none',
-    mt: [4, null, null, 5, 4, 5],
-    p: 0,
-    li: {
-      fontSize: [0, 1, null, 2, '15px', 2],
-      fontWeight: 500,
-      alignItems: 'center',
-      color: 'textSecondary',
-      display: 'flex',
-      lineHeight: [2.81, null, null, null, 2.2, 2.81],
-    },
+    fontWeight: '300px',  
   },
 };

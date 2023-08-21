@@ -3,6 +3,7 @@
 import { jsx, Box, Text, Container, ThemeProvider } from 'theme-ui';
 import Logo from 'assets/images/dms.png';
 import { Link } from 'components/link';
+import Links from "next/link";
 import { menuItems, footerNav } from '../components/Footer2nd/footer.data';
 import { rgba } from 'polished';
 import RevealHorizontal from 'sections/RevealHori';
@@ -17,9 +18,11 @@ export default function Footer() {
         <Box sx={styles.footerInner}>
           <Box sx={styles.copyright}>
             <img src={Logo} sx={styles.logo} />
+            <Links href="/copyright">
             <Text as="span">
-            Copyright by Deep Memorial Public School. All Rights Reserved.
+            All rights Reserved by DMPS ECOCLUB
             </Text>
+            </Links>
           </Box>
 
           <Box as="ul" sx={styles.footerNav}>
@@ -39,7 +42,6 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: '#F2F2F2',
     pt: [0, 6],
   },
   footerTopInner: {
@@ -58,6 +60,7 @@ const styles = {
     borderTop: [null, null, null, `1px solid #D9E0E7`],
     display: ['block', null, 'flex'],
     alignItems: 'center',
+    fontFamily: 'headingAlt',
     justifyContent: 'space-between',
     padding: ['30px 0 20px', null, null, '30px 0 35px', '35px 0 40px'],
   },
@@ -66,18 +69,23 @@ const styles = {
     alignItems: 'center',
     flexDirection: ['column', null, null, null, 'row'],
     span: {
+      cursor: 'pointer',
+      color: rgba('#0F2137', 0.6),
       fontSize: '14px',
       lineHeight: 1.29,
-      color: rgba('#0F2137', 0.6),
       mt: ['18px', '18px', '7px'],
+      ml: '23px',
+     
     },
+    
   },
   footerNav: {
     listStyle: 'none',
-    margin: ['15px -35px 0', '15px 0 0', '0'],
+    margin: ['15px 0px 0', '15px 0 0', '0'],
     padding: 0,
     display: ['flex'],
     width: 350,
+    fontWeight: 600,
     flexWrap: ['wrap', null, null, 'unset'],
     justifyContent: ['center', null, 'flex-start'],
     'li + li': {

@@ -9,6 +9,7 @@ import Project from 'sections/Project';
 import Faq from 'sections/faq';
 import Gallery from 'sections/gallery';
 import TeamSection from 'sections/team';
+import Contact from 'sections/Contact';
 
 export default function IndexPage() {
   return (
@@ -27,6 +28,7 @@ export default function IndexPage() {
         <Gallery />
         <TeamSection />
         <Faq />
+        <Contact />
       </Layout>
     </ThemeProvider>
     </Container>

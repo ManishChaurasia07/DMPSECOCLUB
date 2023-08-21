@@ -12,8 +12,8 @@
       label: 'PROJECTS',
     },
     {
-      path: '/gallery',
-      label: 'GALLERY',
+      path: '/media',
+      label: 'MEDIA',
     },
     {
       path: '/',

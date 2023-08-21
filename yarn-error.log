@@ -18,7 +18,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "@landing/023-next",
+    "name": "@manish/07-next",
     "version": "0.0.1",
     "private": true,
     "scripts": {

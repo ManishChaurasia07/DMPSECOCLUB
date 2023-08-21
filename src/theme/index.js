@@ -4,18 +4,18 @@ export default {
   
   // example colors with dark mode
   colors: {
-    text: "#343D48", // body color and primary color
+    text: "2e3642", // body color and primary color
     textSecondary: "#02073E", // secondary body color
-    heading: "#0F2137", // primary heading color
-    headingSecondary: "#343D48", // heading color
+    heading: "#1a3066", // primary heading color
+    headingSecondary: "#546681", // heading color
     background: "#F2f2f2", // body background color
-    backgroundSecondary: "#F9FAFC", // secondary background color
+    backgroundSecondary: "#D6D7D7", // secondary background color
     borderColor: "#E9EDF5", // border color
-    primary: "#56BBD0", // primary button and link color
+    primary: '#484dff',
     secondary: "#FFC059", // secondary color - can be used for hover states
     muted: "#7B8188", // muted color
     accent: "#609", // a contrast color for emphasizing UI
-    dark: "#10132D",
+    dark: "#3898ec",
     link: "#3183FF",
     // highlight	a background color for highlighting text
     // modes: {
@@ -29,12 +29,13 @@ export default {
     // },
   },
   fonts: {
-    body: "DM Sans, sans-serif",
+    body: "Inter, sans-serif",
+    header: 'Inter, sans-serif',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: "DM Sans, sans-serif",
-    headingAlt: `'Arvo', serif`,
-    monospace: "Menlo, monospace",
+    headingAlt: 'Inter, sans-serif',
+    monospace: "Inter, sans-serif",
   },
   fontSizes: [
     12, // 0
@@ -151,7 +152,7 @@ export default {
     default: {
       backgroundColor: "transparent",
       fontFamily: "body",
-      fontWeight: "bold",
+      fontWeight: "500",
       borderRadius: "5px",
       cursor: "pointer",
       display: "inline-flex",

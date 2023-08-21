@@ -46,14 +46,15 @@ const styles = {
     textAlign: 'center',
   },
   slogan: {
-    color: 'primary',
+    color: '#484DFF',
     fontWeight: 500,
     fontSize: 2,
     lineHeight: 2.5,
   },
   title: {
-    color: 'heading',
-    fontFamily: 'headingAlt',
+    color: '#1A3066',
+    marginTop: ['0px', '-20px'],
+    fontFamily: `'Inter', sans-serif`,
     fontWeight: 700,
     fontSize: [4, null, 5, 6],
     lineHeight: [1.33, 1.33, 2.08],

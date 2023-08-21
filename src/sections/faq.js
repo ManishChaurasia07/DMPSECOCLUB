@@ -68,13 +68,6 @@ const Faq = () => {
   <RevealVertical>
         <Accordion items={data} />
         </RevealVertical>
-        <RevealVertical>
-          <Link href="/ContactForm">
-        <Box sx={styles.loadMore}>
-          <Button variant="text">More questions? Contact us!</Button>
-        </Box>
-        </Link>
-        </RevealVertical>
       </Container>
     </section>
   );
@@ -92,7 +85,7 @@ const styles = {
     textAlign: 'center',
     ml: [10, 0],
     button: {
-      backgroundColor: '#ECF2F7',
+      backgroundColor: '#FFF',
       color: '#738295',
       minHeight: 50,
       px: '22px',

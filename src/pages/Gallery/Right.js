@@ -20,8 +20,8 @@ const styles = {
     overflow: 'hidden',
     display: 'flex',
     flexWrap: 'wrap',
-    mb: 30,
-    m: ['40px 12px -10px', null, null, '20px 780px 0px', '35px -10px 0'],
+    mb: 10,
+    m: ['40px 12px -10px', null, null, '17px 780px -10px', '35px -10px 0'],
     width: [
       'calc(100% - 30px)',
       'calc(50% - 30px)',

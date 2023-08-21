@@ -35,7 +35,7 @@ export default function Header() {
   ]
   const gallery = [
     {
-      label: 'GALLERY',
+      label: 'MEDIA',
     },
   ]
   const about = [
@@ -120,7 +120,7 @@ export default function Header() {
               </Link>
               ))}
               {gallery.map(({  label }, i) => (
-              <Link href="/gallery">
+              <Link href="/media">
               <NavLink key={i} label={label} sx={styles.aa}/>
               </Link>
               ))}
@@ -149,7 +149,7 @@ const styles = {
     py: [5],
     transition: 'all 0.3s ease-in-out 0s',
     '&.is-sticky': {
-      backgroundColor: '#F2F2F2',
+      backgroundColor: '#fff',
       boxShadow: '0px 20px 50px rgba(59, 90, 136, 0.10)',
       py: [3],
     },
@@ -162,7 +162,7 @@ const styles = {
   },
   logo: {
     mr: [null, null, null, null, 30, '578px'],
-    ml: ['-40px', null, null, null, 30, '-30px'],
+    ml: ['0px', null, null, null, 30, '-30px'],
     cursor: 'pointer',
   },
   navbar: {
@@ -171,26 +171,29 @@ const styles = {
     flexGrow: 3,
     // justifyContent: 'center',
     a: {
-      ml: '100px',
+      ml: '200px',
+      fontFamily: 'header',
       cursor: 'pointer',
       display: ['flex'],
       fontWeight: 600,
-      color: '#834D80',
+      color: '#546681',
       padding: 0,
       transition: 'all 0.3s ease-in-out 0s',
       '+ a': {
         ml: 7,
       },
     },
-    
+    '.active': {
+      color: '#484dff',
+    },
   },
   aa:{
     position: 'relative',
     textDecoration: 'none',
-    color: '#00539CFF',
+    color: '#484dff',
     transition: 'color 0.3s ease',
     '&:hover': {
-      color: '#FFD662FF',
+      color: '#484dff',
     },
 
     '&:before': {
@@ -199,7 +202,7 @@ const styles = {
       width: '100%',
       height: '4px',
       bottom: '-3px',
-      backgroundColor: '#FFD662FF',
+      backgroundColor: '#484dff',
       transform: 'scaleX(0)',
       transformOrigin: 'left center',
       transition: 'transform 0.3s ease',

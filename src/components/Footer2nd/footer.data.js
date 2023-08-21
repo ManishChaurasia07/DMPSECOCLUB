@@ -12,12 +12,12 @@
       label: 'PROJECTS',
     },
     {
-      path: '/gallery',
-      label: 'GALLERY',
+      path: '/media',
+      label: 'MEDIA',
     },
     {
-      path: '/',
-      label: 'FAQ',
+      path: '/blog',
+      label: 'BLOG',
     },
   ];
   

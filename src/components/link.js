@@ -53,17 +53,22 @@ const fadeRight = keyframes`
 `;
 const styles = {
   learnMore: {
-    color: 'link',
+    color: '#fff',
     cursor: 'pointer',
     fontSize: [1, null, null, '15px'],
     fontWeight: 500,
+    background: '#484DFF',
     display: 'inline-flex',
+    padding: ['18px 35px'],
+    fontFamily: 'Inter, sans-serif',
     alignItems: 'center',
+    borderRadius: '50px',
     svg: {
       transform: 'translateX(3px)',
       width: ['13px', null, null, '16px'],
     },
     ':hover': {
+      background: '#3898ec',
       svg: {
         animation: `${fadeRight} 0.5s linear`,
       },

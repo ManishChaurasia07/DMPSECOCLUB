@@ -20,8 +20,8 @@ const data = [
     id: 1,
     image: Poster1,
     title: 'Saving the Earth: Embracing a Plastic-Free Future and Recycling E-Waste',
-    desc:  'This blog explores the importance of plastic reduction and e-waste recycling for Earth preservation',
     link: 'Blog/Blog1',
+    desc: '',
   },
   {
     id: 2,
@@ -82,8 +82,8 @@ const Blog = () => {
     >
         <SectionHeading
           sx={styles.heading}
-          slogan="Latest Blog"
-          title="Our Recent Blog "
+          slogan="BLOG & CASE STUDIES"
+          title="Our Recent Blog"
         />
         </motion.div>
         <RevealVertical>
@@ -110,7 +110,7 @@ export default Blog;
 
 const styles = {
   Header: {
-    m: ['-20px 0px 0', null,null, '-35px 0px 20px', '35px -10px 0'],
+    m: ['3px 0px 0px', null,null, '-35px 0px 20px', '35px -10px 0'],
   },
   section: {
     pt: [30, 30, 40, 50, 60],
@@ -118,8 +118,9 @@ const styles = {
   },
   heading: {
     mb: [30, 30, 40, 60],
-    m: ['60px -85px 0', null, null, '100px 25px', '35px 0px 0'],
-    color: ['#02073E'],
+    m: ['60px -120px 0', null, null, '100px 35px', '33px 0px -90px'],
+    color: ['#1a3066'],
+    fontFamily: `'Inter', sans-serif`,
     width: ['250%', '100%'],
   },
   masonry: {
@@ -129,5 +130,6 @@ const styles = {
   },
   image: {
     ml: [10, 0],
+    mt: [0, 20],
   }
   };
