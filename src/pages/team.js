@@ -19,7 +19,7 @@ import Achintya from "../assets/images/Team/achintya.png";
 import Manya from "../assets/images/Team/manya.png";
 import Shamreen from "../assets/images/Team/shamreen.png";
 import Navya from "../assets/images/Team/Navya.png";
-import Shefali from "../assets/images/Team/Shefali.png";
+import Shefali from "../assets/images/Team/shefali.png";
 import Manish from '../assets/images/Team/manish.png';
 import TeamCard from 'components/team-card';
 import Footer from './footer';
