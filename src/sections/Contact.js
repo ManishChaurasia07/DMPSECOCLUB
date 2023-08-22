@@ -114,7 +114,6 @@ import { Box } from "theme-ui";
       onFocus={(e) => {
         e.target.placeholder = '';
       }}
-      autoComplete="name" // Add the autocomplete attribute here
     />
     <FormErrorMessage>Required</FormErrorMessage>
   </FormControl>
@@ -135,7 +134,6 @@ import { Box } from "theme-ui";
       onFocus={(e) => {
         e.target.placeholder = '';
       }}
-      autoComplete="email" // Add the autocomplete attribute here
     />
     <FormErrorMessage>Required</FormErrorMessage>
   </FormControl>
@@ -156,7 +154,6 @@ import { Box } from "theme-ui";
       onFocus={(e) => {
         e.target.placeholder = '';
       }}
-      autoComplete="subject" // Add the autocomplete attribute here
     />
     <FormErrorMessage>Required</FormErrorMessage>
   </FormControl>
@@ -171,7 +168,6 @@ import { Box } from "theme-ui";
       value={values.message}
       onChange={handleChange}
       onBlur={onBlur}
-      autoComplete="message" // Add the autocomplete attribute here
     />
     <FormErrorMessage>Required</FormErrorMessage>
   </FormControl>
