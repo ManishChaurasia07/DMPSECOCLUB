@@ -1,6 +1,6 @@
 # DMPS ECOCLUB
 
-[![Site preview](/public/site-preview.png)](https://manishpotato.vercel.app/)
+[![Site preview](https://github.com/ManishChaurasia07/DMPSECOCLUB/blob/master/public/Screenshot%202023-09-07%20123053.png)](https://manishpotato.vercel.app/)
 
 ## Install & run
 
